@@ -5,3 +5,14 @@
 }
 
 .material-icons.dark-purple { color: #23042F; }
+
+html{
+  scroll-behavior: smooth;
+}
+
+body {
+  font: 400 1rem 'DM sans', sans-serif;
+  color: #525252;
+  background: rgba(256,256,265, 0.98);
+  -webkit-font-smoothing: antialiased;
+}

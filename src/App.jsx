@@ -1,4 +1,4 @@
-import Homepage from './pages/homepage/homepage'
+import React from "react"
 
 function App(props) {
 

@@ -1,8 +1,12 @@
-import React from "react";
+import React from "react"
+import Header from "../../components/header/header.jsx";
+
 
 function VeranoEstetica() {
   return (
-    <h1>Empity page</h1>
+    <>
+      <Header />
+    </>
   )
 }
 
