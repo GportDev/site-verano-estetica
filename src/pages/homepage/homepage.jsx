@@ -9,7 +9,7 @@ function Homepage() {
       <HomeGradient>
         <Card>
           <LogoVerano alt="Logo Verano estética avançada" src={Logo} widht='20rem' height='9.14rem' marginTop='2.25rem'/>
-          <Title>
+          <Title margin="4rem 0 6rem">
             Nossa missão é cuidar de você
           </Title>
           <ImagemInicial alt="Allana Diaz, CEO da Verano Estética segurando um aparelho de depilação a laser" src={Alanna}/>
@@ -21,7 +21,7 @@ function Homepage() {
               Verano bronze<span className="material-icons md-18 dark-purple">chevron_right</span>
             </ButtonOutlined>
           </Buttons>
-          <Text>Verano Estética Avançada | Todos os direitos reservados <br /> Developed by <a alt='Site do desenvolvedor desta página' src="#" target='blank'>PortDev</a></Text>
+          <Text margin="36px 0 2rem">Verano Estética Avançada | Todos os direitos reservados <br /> Developed by <a alt='Site do desenvolvedor desta página' src="#" target='blank'>PortDev</a></Text>
         </Card>
       </HomeGradient>
     </>

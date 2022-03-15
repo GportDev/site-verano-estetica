@@ -1,11 +1,11 @@
 import styled from "styled-components"
 
 /* ------ HEADER ------ */
-const HeaderStyle = styled.header`
+export const HeaderStyle = styled.header`
   border-bottom: 1px solid #e4e4e4;
   margin-bottom: 2rem;
   display: flex;
-  position: fixed;
+  position: sticky;
   top: 0;
   left: 0;
   z-index: 10;
@@ -15,8 +15,13 @@ const HeaderStyle = styled.header`
     box-shadow: 0px 2px 12px rgba(0, 0, 0, 0.08);
   }
 `
+export const MenuWrapper = styled.div`
+  margin: 0 auto;
+  padding: 0;
+  width: 1170px;
+`
 
-const Menu = styled.nav`
+export const Menu = styled.nav`
   height: 4.5rem;
   width: 100%;
   display: flex;
@@ -24,17 +29,17 @@ const Menu = styled.nav`
   align-items: center;
 `
 
-const MenuItems = styled.ul`
-  text-align: center;
-  margin-right: 8.5rem;
-`
-const MenuItem = styled.li`
+export const MenuItems = styled.ul`
   text-align: center;
 `
 
-const MenuLink = styled.a`
+export const MenuItem = styled.li`
+  text-align: center;
+`
+
+export const MenuLink = styled.a`
   font-family: 'Poppins';
-  color: #23042F;
+  color: ${props => props.color};
   text-decoration: none;
   list-style: none;
   display: inline-block;
@@ -42,8 +47,7 @@ const MenuLink = styled.a`
   margin-left: 2.25rem;
   font-size: 1.25rem;
   &:hover {
-    color: #D465E7;
+    color: ${props => props.hoverColor};
     transition: color 0.3s;
   }
 `
-export { HeaderStyle, Menu, MenuItems, MenuItem, MenuLink }
