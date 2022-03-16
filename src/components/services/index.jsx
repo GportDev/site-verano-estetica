@@ -1,18 +1,57 @@
-import { ColumnSection, Title, Text, Card, Swiper} from "../styles/styles";
+import { ColumnSection, Title, Text, Card, Swiper, MachineAvatar, Subtitle, NameTitle, ButtonFilled} from "../styles/styles";
+import Soprano from "../../assets/images/Soprano-cut.png"
+import Etherea from "../../assets/images/Etherea.png"
+import Ultraformer from "../../assets/images/ultraformer-cut.png"
+import Inkie from "../../assets/images/inkie.png"
 
 function AestheticsServices() {
   return(
     <ColumnSection>
-      <Title position='relative'>Serviços</Title>
+      <Title position='relative'>Serviços e plataformas</Title>
       <Text margin='4rem' position='relative'>Com mais de 2 anos no mercado de estética, a Verano conquistou seus clientes com opções de tratamento exclusivas, sempre se preocupando com a saúde e bem estar do paciente.
       Dentre esses serviços temos:
       </Text>
-      <Swiper>
-        <Card width="26rem" padding="2.5rem">
-          
-        <Text>
-          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt explicabo vel vitae quia voluptatum, consectetur asperiores facilis inventore laboriosam, veniam at beatae quas ab! Illo nam possimus perspiciatis eveniet vero.
-        </Text>
+      <Swiper className="services">
+
+        <Card className="service">
+          <Subtitle margin="0 0 4rem">Depilação a laser</Subtitle>
+          <MachineAvatar src={Soprano}/>
+          <NameTitle margin="4rem 0 1.5rem">Soprano Ice Laser de Diodo</NameTitle>
+          <Text margin="0 0 1.5rem">
+            Tecnologia de padrão OURO, com sessões indolores, podendo ser aplicado em todos fototipos de pele, até mesmo sobre a pele bronzeada.
+          </Text>
+          <ButtonFilled fontSize="1.5rem">Saiba mais</ButtonFilled>
+        </Card>
+
+        <Card className="service">
+          <Subtitle margin="0 0 4rem">Ultrassom estético</Subtitle>
+          <MachineAvatar src={Ultraformer}/>
+          <NameTitle margin="4rem 0 1.5rem">Ultraformer III</NameTitle>
+          <Text margin="0 0 1.5rem">
+            Ultrassom microfocado e macrofocado. Oferecendo ao paciente tratamentos faciais e corporais sem a necessidade de cirurgia.
+            Além da recuperação de colágeno para regiões tratadas.
+          </Text>
+          <ButtonFilled fontSize="1.5rem">Saiba mais</ButtonFilled>
+        </Card>
+
+        <Card className="service">
+          <Subtitle margin="0 0 4rem">Plataforma multifuncional</Subtitle>
+          <MachineAvatar src={Etherea}/>
+          <NameTitle margin="4rem 0 1.5rem">Etherea MX</NameTitle>
+          <Text margin="0 0 1.5rem">
+            Plataforma que associa lasers de intensidade regulável com ponteiras especificas para diferentes tratamentos. Mais de 70 procedimentos podem ser realizados, desde lifting facial até a remoção de tatuagens coloridas.
+          </Text>
+          <ButtonFilled fontSize="1.5rem">Saiba mais</ButtonFilled>
+        </Card>
+
+        <Card className="service">
+          <Subtitle margin="0 0 4rem">Remoção de tatuagens e pigmentos</Subtitle>
+          <MachineAvatar src={Inkie}/>
+          <NameTitle margin="4rem 0 1.5rem">Inkie ND YAG Q switched</NameTitle>
+          <Text margin="0 0 1.5rem">
+            Peeling de Hollywood, blackpeel, tratamentos de melasma, remoção de tatuagem e muito mais!
+          </Text>
+          <ButtonFilled fontSize="1.5rem">Saiba mais</ButtonFilled>
         </Card>
       </Swiper>
     </ColumnSection>

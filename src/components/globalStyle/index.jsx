@@ -26,10 +26,10 @@ export const GlobalStyle = createGlobalStyle`
 
   /* SIZES */
   --Large-screen: 1440px;
-  --Section-margin: 5rem;
-  --Text-to-image: 4rem;
-  --Subtitle-to-text: 1.5rem;
-  --To-button: 4rem;
-  --Page-margin: 8.45rem;
+  --Section-margin: 5rem; /* 80px */
+  --Text-to-image: 4rem; /* 64px */
+  --Subtitle-to-text: 1.5rem; /* 24px */
+  --To-button: 4rem; 
+  --Page-margin: 8.45rem; /* 135px */
 }
 `

@@ -18,8 +18,19 @@ export const Subtitle = styled.h2`
   font-family: 'Poppins';
   font-weight: 700;
   font-style: bold;
-  font-size: 2.6rem;
+  font-size: 2rem;
   line-height: 3.5rem;
+  color: var(--Dark-purple);
+`
+
+export const NameTitle = styled.h3`
+  position: ${props => props.position};
+  margin: ${props => props.margin};
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
   color: var(--Dark-purple);
 `
 
@@ -27,10 +38,10 @@ export const Text = styled.p`
   position: ${props => props.position};
   display: inline-block;
   font-family: DM Sans;
-  font-size: ${props => props.fontSize || '1.125rem'};
+  font-size: ${props => props.fontSize || '1.25rem'};
   margin: ${props => props.margin};
   color: ${props => props.color || 'var(--Text)' };
-  text-align: ${props => props.align || 'center' } ;
+  text-align: ${props => props.align || 'center' };
 `
 export const Container = styled.div`
   width: 100vw;
@@ -62,7 +73,6 @@ export const ColumnSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 2px dashed red;
 `
 
 export const UpPurpleWaves = styled.img`
@@ -106,6 +116,10 @@ export const Card = styled.section`
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);
   border-radius: 1rem;
   text-align: center;
+  &.service {
+    width: 26rem;
+    padding: 2rem;
+  }
 `
 
 export const LogoVerano = styled.img`
@@ -115,6 +129,9 @@ export const LogoVerano = styled.img`
   margin-left: ${props => props.marginLeft || 0};
 `
 
+
+
+/* ------ Buttons ------ */
 export const ButtonOutlined = styled.a`
   text-decoration: none;
   color: ${props => props.color || 'black'};
@@ -132,6 +149,7 @@ export const ButtonOutlined = styled.a`
 export const ButtonFilled = styled.a`
   text-decoration: none;
   color: ${props => props.color || 'black'};
+  font-size: ${props => props.fontSize};
   margin: 0 auto;
   background: #D286DF;
   color: white;
@@ -195,7 +213,7 @@ export const Buttons = styled.nav`
 
 /* ------ Services ------ */
 export const MachineAvatar = styled.img`
-  
+  max-height: 12rem;
 `
 
 
@@ -214,6 +232,9 @@ export const Swiper = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  &.services {
+    gap: 2.5rem ;
+  }
 `
 
 export const Testimonial = styled.div`

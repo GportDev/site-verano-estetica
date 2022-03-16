@@ -7,6 +7,8 @@ import AestheticsServices from "../../components/services/index.jsx";
 import Testimonials from "../../components/testimonials/index.jsx";
 import About from "../../components/about/index.jsx";
 import Contact from "../../components/contact/index.jsx";
+import Injectables from "../../components/injectables/index.jsx";
+import Manuals from "../../components/manuals/index.jsx";
 
 function VeranoEstetica() {
   return (
@@ -18,6 +20,12 @@ function VeranoEstetica() {
       <PurpleSection>
         <AestheticsServices />
       </PurpleSection>
+      <WhiteSection>
+        <Injectables />
+      </WhiteSection>
+      <WhiteSection>
+        <Manuals />
+      </WhiteSection>
       <WhiteSection>
         <Testimonials />
       </WhiteSection>
