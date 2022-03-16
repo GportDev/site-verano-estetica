@@ -12,8 +12,8 @@ function MyRouter() {
       <App>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
-          <Route path="/#/verano-estetica" element={<VeranoEstetica />}/>
-          <Route path="/#/verano-bronze" element={<VeranoBronze />}/>
+          <Route path="#/verano-estetica" element={<VeranoEstetica />}/>
+          <Route path="#/verano-bronze" element={<VeranoBronze />}/>
         </Routes>
       </App>
     </HashRouter>
