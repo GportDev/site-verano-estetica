@@ -1,9 +1,22 @@
-import react from "react";
-import { Subtitle } from "../styles/styles";
+import { Subtitle, Section, ContentSection, Text, ProceduresTable, TableLink, Procedure } from "../styles/styles";
 
 function Manuals() {
   return(
-    <Subtitle>Procedimentos manuais</Subtitle>
+    <Section margin="6rem auto" >
+      <ProceduresTable>
+        <TableLink href="#"><Procedure>Drenagem linfática manual</Procedure></TableLink>
+        <TableLink href="#"><Procedure>Fisioterapia Pélvica</Procedure></TableLink>
+        <TableLink href="#"><Procedure>Massagem</Procedure></TableLink>
+        <TableLink href="#"><Procedure>Peeling</Procedure></TableLink>
+      </ProceduresTable>
+      <ContentSection>
+        <Subtitle>Procedimentos Manuais</Subtitle>
+        <Text>
+          Os procedimentos manuais são técnicas de terapia corporal feitos pela nossa fisioterapeuta, todos eles tem o objetivo de melhorar a estética e aumentar seu bem estar.<br/><br/>
+          Nossos procedimentos estão listados na tabela ao lado.
+        </Text>
+      </ContentSection>
+    </Section>
   )
 }
 

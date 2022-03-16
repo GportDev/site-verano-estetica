@@ -9,6 +9,7 @@ import About from "../../components/about/index.jsx";
 import Contact from "../../components/contact/index.jsx";
 import Injectables from "../../components/injectables/index.jsx";
 import Manuals from "../../components/manuals/index.jsx";
+import Footer from "../../components/footer/index.jsx";
 
 function VeranoEstetica() {
   return (
@@ -31,6 +32,7 @@ function VeranoEstetica() {
       </WhiteSection>
       <About />
       <Contact />
+      <Footer />
     </>
   )
 }

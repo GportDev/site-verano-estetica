@@ -15,8 +15,11 @@ function Header() {
             <MenuLink href="#Home" color="#23042F" hoverColor="#D465E7;">
               <MenuItem>Inicio</MenuItem>
             </MenuLink>
-            <MenuLink href="#Services" color="#23042F" hoverColor="#D465E7;">
-              <MenuItem>Serviços</MenuItem>
+            <MenuLink href="#Platforms" color="#23042F" hoverColor="#D465E7;">
+              <MenuItem>Plataformas</MenuItem>
+            </MenuLink>
+            <MenuLink href="#Produres" color="#23042F" hoverColor="#D465E7;">
+              <MenuItem>Procedimentos</MenuItem>
             </MenuLink>
             <MenuLink href="#Testimonials" color="#23042F" hoverColor="#D465E7;">
               <MenuItem>Relatos</MenuItem>

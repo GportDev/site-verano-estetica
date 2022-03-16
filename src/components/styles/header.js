@@ -17,8 +17,8 @@ export const HeaderStyle = styled.header`
 `
 export const MenuWrapper = styled.div`
   margin: 0 auto;
-  padding: 0;
-  width: 1170px;
+  padding: 0 8.5rem;
+  width: 1440px;
 `
 
 export const Menu = styled.nav`
@@ -45,7 +45,7 @@ export const MenuLink = styled.a`
   display: inline-block;
   justify-content: space-between;
   margin-left: 2.25rem;
-  font-size: 1.25rem;
+  font-size: 1.15rem;
   &:hover {
     color: ${props => props.hoverColor};
     transition: color 0.3s;
