@@ -1,9 +1,9 @@
 import React from "react"
 import { Route, HashRouter, Routes } from "react-router-dom"
 import HomePage from "../pages/homepage/index.jsx"
-import App from "../App.jsx"
-import VeranoEstetica from "../pages/verano-estetica/index.jsx"
-import VeranoBronze from "../pages/verano-bronze/index.jsx"
+import App from "../App"
+import VeranoEstetica from "../pages/verano-estetica/index"
+import VeranoBronze from "../pages/verano-bronze/index"
 
 
 function MyRouter() {
@@ -12,8 +12,8 @@ function MyRouter() {
       <App>
         <Routes>
           <Route path="/" element={<HomePage/>}/>
-          <Route path="#/verano-estetica" element={<VeranoEstetica />}/>
-          <Route path="#/verano-bronze" element={<VeranoBronze />}/>
+          <Route path="/verano-estetica" element={<VeranoEstetica />}/>
+          <Route path="/verano-bronze" element={<VeranoBronze />}/>
         </Routes>
       </App>
     </HashRouter>
