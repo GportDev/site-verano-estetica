@@ -1,9 +1,9 @@
 import React from "react"
 import { Route, BrowserRouter, Routes } from "react-router-dom"
-import HomePage from "../pages/homepage/homepage"
-import App from "../App"
-import VeranoEstetica from "../pages/verano-estetica/verano-estetica"
-import VeranoBronze from "../pages/verano-bronze/verano-bronze"
+import HomePage from "../pages/homepage/index.jsx"
+import App from "../App.jsx"
+import VeranoEstetica from "../pages/verano-estetica/index.jsx"
+import VeranoBronze from "../pages/verano-bronze/index.jsx"
 
 
 function MyRouter() {

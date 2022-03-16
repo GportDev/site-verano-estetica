@@ -2,7 +2,6 @@ import { createGlobalStyle } from "styled-components";
 
 export const GlobalStyle = createGlobalStyle`
 :root{
-
   /* COLORS */
   --Dark-purple: #23042F;
   --Medium-purple: #721B94;
@@ -24,7 +23,6 @@ export const GlobalStyle = createGlobalStyle`
   /* EFFECTS */
   --Shadow: 2px 2px 6px rgba(0, 0, 0, 0.25), inset 2px 2px 6px rgba(208, 208, 208, 0.25); ;
   --Border-radius: 1rem;
-
 
   /* SIZES */
   --Large-screen: 1440px;

@@ -1,12 +1,12 @@
 import React from "react";
-import { Section } from "../styles/styles";
+import { Container } from "../styles/styles";
 
 
 function WhiteSection(props) {
   return (
-    <Section>
+    <Container>
       {props.children}
-    </Section>
+    </Container>
   )
 }
 

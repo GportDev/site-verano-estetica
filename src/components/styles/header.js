@@ -8,7 +8,7 @@ export const HeaderStyle = styled.header`
   position: sticky;
   top: 0;
   left: 0;
-  z-index: 10;
+  z-index: 100;
   background-color: #f9f9f9;
   width: 100%;
   &.scroll {

@@ -18,7 +18,7 @@ export const Subtitle = styled.h2`
   font-family: 'Poppins';
   font-weight: 700;
   font-style: bold;
-  font-size: 3rem;
+  font-size: 2.6rem;
   line-height: 3.5rem;
   color: var(--Dark-purple);
 `
@@ -27,10 +27,14 @@ export const Text = styled.p`
   position: ${props => props.position};
   display: inline-block;
   font-family: DM Sans;
-  font-size: 1.125rem;
+  font-size: ${props => props.fontSize || '1.125rem'};
   margin: ${props => props.margin};
   color: ${props => props.color || 'var(--Text)' };
   text-align: ${props => props.align || 'center' } ;
+`
+export const Container = styled.div`
+  width: 100vw;
+  margin: 0 auto;
 `
 
 export const Section = styled.section`
@@ -41,7 +45,6 @@ export const Section = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  background-color: ${props => props.background} ;
 `
 
 export const ColorSection = styled.section`
@@ -59,6 +62,7 @@ export const ColumnSection = styled.section`
   display: flex;
   flex-direction: column;
   align-items: center;
+  border: 2px dashed red;
 `
 
 export const UpPurpleWaves = styled.img`
@@ -95,8 +99,8 @@ export const ContentSection = styled.div`
 `
 
 export const Card = styled.section`
-  margin: 0 auto;
-  padding: 0 2.75rem;
+  margin: ${props => props.margin || '0 auto'};
+  padding: ${props => props.padding || '0 2.75rem'};
   background: #f9f9f9;
   width: ${props => props.width || '36rem'};
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);
@@ -124,6 +128,7 @@ export const ButtonOutlined = styled.a`
   align-items: center;
   justify-content: center;
 `
+
 export const ButtonFilled = styled.a`
   text-decoration: none;
   color: ${props => props.color || 'black'};
@@ -157,7 +162,12 @@ export const ListItem = styled.li`
   font-size: 1.5rem;
 `
 
-/* ------ SECTIONS ------ */
+
+
+
+
+
+/* ------ PAGES ------ */
 /* ------ Home ------ */
 
 export const HomeGradient = styled.section`
@@ -176,4 +186,49 @@ export const ImagemInicial = styled.img`
 export const Buttons = styled.nav`
   display: flex;
   justify-content: space-between;
+`
+
+
+
+
+
+
+/* ------ Services ------ */
+export const MachineAvatar = styled.img`
+  
+`
+
+
+
+
+/* ------ Testimonials ------ */
+export const TestimonialSection = styled.section`
+  max-width: 1440px;
+  padding: 0 var(--Page-margin) ;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: var(--Text-to-image) auto;
+`
+export const Swiper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+`
+
+export const Testimonial = styled.div`
+  max-width: 34rem;
+  justify-content: center;
+`
+
+export const Avatar = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 1.125rem auto 0;
+  padding: 0 2rem;
+`
+
+export const AvatarPicture = styled.img`
+  max-width: 4.5rem;
 `
