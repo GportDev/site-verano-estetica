@@ -2,7 +2,7 @@ import { ColumnSection, Title, Text, Card, Swiper, MachineAvatar, Subtitle, Name
 import Soprano from "../../assets/images/Soprano-cut.png"
 import Etherea from "../../assets/images/Etherea.png"
 import Ultraformer from "../../assets/images/ultraformer-cut.png"
-import Inkie from "../../assets/images/inkie.png"
+import Inkie from "../../assets/images/Inkie.png"
 
 function AestheticsServices() {
   return(
