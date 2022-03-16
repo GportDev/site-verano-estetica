@@ -14,10 +14,10 @@ function Homepage() {
           </Title>
           <ImagemInicial alt="Allana Diaz, CEO da Verano Estética segurando um aparelho de depilação a laser" src={Alanna}/>
           <Buttons>
-            <ButtonOutlined href="/verano-estetica" color="#23042F">
+            <ButtonOutlined href="/#/verano-estetica" color="#23042F">
               <span className="material-icons md-18 dark-purple">chevron_left</span>Verano estetica
             </ButtonOutlined>
-            <ButtonOutlined href="/verano-bronze" color="#23042F">
+            <ButtonOutlined href="/#/verano-bronze" color="#23042F">
               Verano bronze<span className="material-icons md-18 dark-purple">chevron_right</span>
             </ButtonOutlined>
           </Buttons>
