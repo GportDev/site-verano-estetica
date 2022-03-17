@@ -1,4 +1,5 @@
-import { Subtitle, TestimonialSection, Imagem, Card, Testimonial, Swiper, Text, Avatar, AvatarPicture } from "../styles/styles"
+import { Subtitle, Imagem, Card, Text, } from "../styles/styles"
+import {TestimonialSection, Testimonial, Swiper, Avatar, AvatarPicture} from "./styles"
 import Alanna from "../../assets/images/allana01.jpg"
 import Gabriel from "../../assets/images/foto-avatar-redondo.png"
 

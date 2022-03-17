@@ -4,6 +4,10 @@ import HomePage from "../pages/homepage/index.jsx"
 import App from "../App"
 import VeranoEstetica from "../pages/verano-estetica/index"
 import VeranoBronze from "../pages/verano-bronze/index"
+import Soprano from "../pages/verano-estetica/platforms/soprano/index.jsx"
+import Inkie from "../pages/verano-estetica/platforms/inkie/index.jsx"
+import Etherea from "../pages/verano-estetica/platforms/etherea/index.jsx"
+import Ultraformer from "../pages/verano-estetica/platforms/ultraformer/index.jsx"
 
 
 function MyRouter() {
@@ -13,6 +17,10 @@ function MyRouter() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/verano-estetica" element={<VeranoEstetica />}/>
+          <Route path="/verano-estetica/soprano" element={<Soprano />}/>
+          <Route path="/verano-estetica/etherea" element={<Etherea />}/>
+          <Route path="/verano-estetica/inkie" element={<Inkie />}/>
+          <Route path="/verano-estetica/ultraformer" element={<Ultraformer />}/>
           <Route path="/verano-bronze" element={<VeranoBronze />}/>
         </Routes>
       </App>

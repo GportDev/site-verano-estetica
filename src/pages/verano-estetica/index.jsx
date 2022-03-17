@@ -7,31 +7,31 @@ import AestheticsServices from "../../components/services/index.jsx";
 import Testimonials from "../../components/testimonials/index.jsx";
 import About from "../../components/about/index.jsx";
 import Contact from "../../components/contact/index.jsx";
-import Injectables from "../../components/injectables/index.jsx";
-import Manuals from "../../components/manuals/index.jsx";
+import Injectables from "../../components/other_services/injectables/index";
+import Manuals from "../../components/other_services/manuals/index";
 import Footer from "../../components/footer/index.jsx";
 
 function VeranoEstetica() {
   return (
     <>
       <Header />
-      <WhiteSection>
+      <WhiteSection id="Home">
         <EsteticIntro />
       </WhiteSection>
-      <PurpleSection>
+      <PurpleSection id="Platforms">
         <AestheticsServices />
       </PurpleSection>
-      <WhiteSection>
+      <WhiteSection id="Produres">
         <Injectables />
       </WhiteSection>
       <WhiteSection>
         <Manuals />
       </WhiteSection>
-      <WhiteSection>
+      <WhiteSection id="Testimonials">
         <Testimonials />
       </WhiteSection>
-      <About />
-      <Contact />
+      <About id="About"/>
+      <Contact id="Contact"/>
       <Footer />
     </>
   )

@@ -1,4 +1,6 @@
-import { Subtitle, Section, ContentSection, Text, ProceduresTable, TableLink, Procedure } from "../styles/styles";
+import { ProceduresTable, Procedure, TableLink } from "../styles.js";
+
+import { Section, ContentSection, Subtitle, Text } from "../../styles/styles";
 
 function Manuals() {
   return(

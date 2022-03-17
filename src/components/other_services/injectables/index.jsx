@@ -1,4 +1,5 @@
-import { Subtitle, Section, ContentSection, Text, ProceduresTable, Procedure, TableLink } from "../styles/styles";
+import { ProceduresTable, Procedure, TableLink } from "../styles";
+import { Subtitle, Section, ContentSection, Text } from "../../styles/styles"
 
 function Injectables() {
   return(

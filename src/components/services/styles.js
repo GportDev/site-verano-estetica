@@ -1,0 +1,25 @@
+import styled from 'styled-components';
+
+export const MachineAvatar = styled.img`
+  max-height: 12rem;
+`
+
+export const Swiper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  &.services {
+    gap: 2.5rem ;
+  }
+`
+
+export const NameTitle = styled.h3`
+  position: ${props => props.position};
+  margin: ${props => props.margin};
+  font-family: 'Poppins';
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.75rem;
+  line-height: 2.25rem;
+  color: var(--Dark-purple);
+`

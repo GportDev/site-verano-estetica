@@ -1,4 +1,5 @@
-import { ButtonFilled, ColumnSection, ContentSection, Imagem, List, ListItem, Subtitle, Text, Section } from "../styles/styles"
+import { ButtonFilled, ColumnSection, Imagem, Subtitle, Text } from "../styles/styles"
+import { List, ListItem, Section, ContentSection } from "./styles"
 import QRCode from "../../assets/images/QRCode-Verano-Estetica.png"
 import PurpleSection from "../purple_section"
 
@@ -11,13 +12,16 @@ function Contact() {
           <Text margin="4rem">
             Entre em contato com a <strong>Verano</strong>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
           </Text>
-          <ButtonFilled>Entrar em contato</ButtonFilled>
+          <ButtonFilled fontSize="1.25rem">Entrar em contato</ButtonFilled>
           <Section>
-            <Imagem src={QRCode} shadow="0" width="16rem"/>
+            <ContentSection>
+              <Subtitle margin="1.25rem 0">Ou escanei aqui</Subtitle>
+              <Imagem src={QRCode} shadow="0" width="16rem"/>
+            </ContentSection>
             <ContentSection>
               <List>
                 <ListItem>(12) 98194-2768</ListItem>
-                <ListItem>Rua João frango</ListItem>
+                <ListItem>Rua Viena, 133, Jd Oswaldo Cruz, São José dos Campos - <br/>Ao lado do Center Vale Shopping</ListItem>
                 <ListItem>diretoria.verano@gmail.com</ListItem>
               </List>
             </ContentSection>

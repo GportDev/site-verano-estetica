@@ -1,5 +1,6 @@
 import React from "react";
-import { HomeGradient, Card, LogoVerano, Title, ImagemInicial, Buttons, ButtonOutlined, Text } from "../../components/styles/styles"
+import { Card, LogoVerano, Title, ButtonOutlined, Text } from "../../components/styles/styles";
+import { HomeGradient, Buttons, ImagemInicial } from "./styles"
 import Logo from "../../assets/images/Logo Verano.png"
 import Alanna from "../../assets/images/allana01.jpg"
 

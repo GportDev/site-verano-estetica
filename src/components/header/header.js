@@ -39,7 +39,7 @@ export const MenuItem = styled.li`
 
 export const MenuLink = styled.a`
   font-family: 'Poppins';
-  color: ${props => props.color};
+  color: var(--Dark-purple);
   text-decoration: none;
   list-style: none;
   display: inline-block;
@@ -47,7 +47,7 @@ export const MenuLink = styled.a`
   margin-left: 2.25rem;
   font-size: 1.15rem;
   &:hover {
-    color: ${props => props.hoverColor};
+    color: var(--Highlight-purple);
     transition: color 0.3s;
   }
 `

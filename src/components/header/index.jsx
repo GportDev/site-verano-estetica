@@ -1,5 +1,5 @@
 import React from "react";
-import { HeaderStyle, Menu, MenuItems, MenuItem, MenuLink, MenuWrapper} from "../styles/header.js";
+import { HeaderStyle, Menu, MenuItems, MenuItem, MenuLink, MenuWrapper} from "./header";
 import { LogoVerano } from "../styles/styles.js";
 import Logo from "../../assets/images/Logo Verano.png"
 
@@ -12,22 +12,22 @@ function Header() {
             <LogoVerano alt="Logo Verano Estética Avaançada" src={Logo} height='3rem' width='6.56rem'/>
           </a>
           <MenuItems>
-            <MenuLink href="#Home" color="#23042F" hoverColor="#D465E7;">
+            <MenuLink href="#/verano-estetica/#Home">
               <MenuItem>Inicio</MenuItem>
             </MenuLink>
-            <MenuLink href="#Platforms" color="#23042F" hoverColor="#D465E7;">
+            <MenuLink href="#/verano-estetica/#Platforms">
               <MenuItem>Plataformas</MenuItem>
             </MenuLink>
-            <MenuLink href="#Produres" color="#23042F" hoverColor="#D465E7;">
+            <MenuLink href="#/verano-estetica/#Produres">
               <MenuItem>Procedimentos</MenuItem>
             </MenuLink>
-            <MenuLink href="#Testimonials" color="#23042F" hoverColor="#D465E7;">
+            <MenuLink href="#/verano-estetica/#Testimonials">
               <MenuItem>Relatos</MenuItem>
             </MenuLink>
-            <MenuLink href="#About" color="#23042F" hoverColor="#D465E7;">
+            <MenuLink href="#/verano-estetica/#About">
               <MenuItem>Sobre</MenuItem>
             </MenuLink>
-            <MenuLink href="#Contact" color="#23042F" hoverColor="#D465E7;">
+            <MenuLink href="#/verano-estetica/#Contact">
               <MenuItem>Contato</MenuItem>
             </MenuLink>
           </MenuItems>

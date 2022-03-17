@@ -1,4 +1,5 @@
-import { ColumnSection, Text, Card, Swiper, MachineAvatar, Subtitle, NameTitle, ButtonFilled} from "../styles/styles";
+import { ColumnSection, Text, Card, Subtitle, ButtonFilled} from "../styles/styles";
+import { Swiper, MachineAvatar, NameTitle} from "./styles"
 import Soprano from "../../assets/images/Soprano-cut.png"
 import Etherea from "../../assets/images/Etherea.png"
 import Ultraformer from "../../assets/images/ultraformer-cut.png"
@@ -20,7 +21,7 @@ function AestheticsServices() {
           <Text margin="0 0 1.5rem">
             Tecnologia de padrão OURO, com sessões indolores, podendo ser aplicado em todos fototipos de pele, até mesmo sobre a pele bronzeada.
           </Text>
-          <ButtonFilled fontSize="1.5rem">Saiba mais</ButtonFilled>
+          <ButtonFilled fontSize="1.5rem" href="#/verano-estetica/soprano">Saiba mais</ButtonFilled>
         </Card>
 
         <Card className="service">
@@ -31,7 +32,7 @@ function AestheticsServices() {
             Ultrassom microfocado e macrofocado. Oferecendo ao paciente tratamentos faciais e corporais sem a necessidade de cirurgia.
             Além da recuperação de colágeno para regiões tratadas.
           </Text>
-          <ButtonFilled fontSize="1.5rem">Saiba mais</ButtonFilled>
+          <ButtonFilled fontSize="1.5rem" href="#/verano-estetica/ultraformer">Saiba mais</ButtonFilled>
         </Card>
 
         <Card className="service">
@@ -41,7 +42,7 @@ function AestheticsServices() {
           <Text margin="0 0 1.5rem">
             Plataforma que associa lasers de intensidade regulável com ponteiras especificas para diferentes tratamentos. Mais de 70 procedimentos podem ser realizados, desde lifting facial até a remoção de tatuagens coloridas.
           </Text>
-          <ButtonFilled fontSize="1.5rem">Saiba mais</ButtonFilled>
+          <ButtonFilled fontSize="1.5rem" href="#/verano-estetica/etherea">Saiba mais</ButtonFilled>
         </Card>
 
         <Card className="service">
@@ -51,7 +52,7 @@ function AestheticsServices() {
           <Text margin="0 0 1.5rem">
             Peeling de Hollywood, blackpeel, tratamentos de melasma, remoção de tatuagem e muito mais!
           </Text>
-          <ButtonFilled fontSize="1.5rem">Saiba mais</ButtonFilled>
+          <ButtonFilled fontSize="1.5rem" href="#/verano-estetica/inkie">Saiba mais</ButtonFilled>
         </Card>
       </Swiper>
     </ColumnSection>
