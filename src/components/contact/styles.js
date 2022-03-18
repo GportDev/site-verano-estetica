@@ -10,12 +10,12 @@ export const List = styled.ul`
 
 export const ListItem = styled.li`
   font-size: 1.5rem;
+  line-height: ${props => props.lineHeight};
 `
 
 export const ContentSection = styled.div`
   max-width: 40rem;
   text-align: center;
-  border: 3px dashed green;
 `
 
 export const Section = styled.section`
@@ -24,5 +24,4 @@ export const Section = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 2px dashed blue;
 `

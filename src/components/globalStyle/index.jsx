@@ -31,5 +31,6 @@ export const GlobalStyle = createGlobalStyle`
   --Subtitle-to-text: 1.5rem; /* 24px */
   --To-button: 4rem; 
   --Page-margin: 8.45rem; /* 135px */
+
 }
 `

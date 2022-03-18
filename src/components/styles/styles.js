@@ -26,20 +26,30 @@ export const Subtitle = styled.h2`
   }
 `
 
-
 export const Text = styled.p`
   position: ${props => props.position};
   display: inline-block;
   font-family: DM Sans;
-  font-size: ${props => props.fontSize || '1.25rem'};
+  font-size: ${props => props.fontSize || '1.20rem'};
   margin: ${props => props.margin};
   color: ${props => props.color || 'var(--Text)' };
   text-align: ${props => props.align || 'center' };
+  strong {
+    color: var(--Highlight-purple);
+  }
 `
 
 export const Container = styled.div`
   width: 100vw;
   margin: 0 auto;
+  &.image {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+  }
 `
 
 export const Section = styled.section`
@@ -49,10 +59,9 @@ export const Section = styled.section`
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border: 1px dashed black;
 `
 
-export const ColorSection = styled.section`
+export const ColorDiv = styled.div`
   position: relative;
   width: 100vw;
   display: flex;
@@ -60,19 +69,17 @@ export const ColorSection = styled.section`
 `
 
 export const ColumnSection = styled.section`
-  max-width: 1440px;
+  width: 1440px;
   margin: 4rem auto;
   padding: 0 var(--Page-margin);
   display: flex;
   flex-direction: column;
   align-items: center;
-  border: 1px dashed black;
 `
   
 export const ContentSection = styled.div`
   max-width: 32rem;
   text-align: center;
-  border: 1px dashed black;
 `
 
 export const Card = styled.section`
@@ -126,8 +133,8 @@ export const ButtonFilled = styled.a`
   margin: 0 auto;
   background: var(--Principal-purple);
   color: white;
-  padding: 0.75rem;
-  width: 14rem;
+  padding: 0.75rem 1.25rem;
+  max-width: fit-content;
   border: 2px solid var(--Principal-purple);
   border-radius: 0.5rem;
   display: flex;

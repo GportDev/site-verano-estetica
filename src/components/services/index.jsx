@@ -1,9 +1,9 @@
 import { ColumnSection, Text, Card, Subtitle, ButtonFilled} from "../styles/styles";
 import { Swiper, MachineAvatar, NameTitle} from "./styles"
-import Soprano from "../../assets/images/Soprano-cut.png"
-import Etherea from "../../assets/images/Etherea.png"
-import Ultraformer from "../../assets/images/ultraformer-cut.png"
-import Inkie from "../../assets/images/Inkie.png"
+import Soprano from "../../assets/images/Soprano/Soprano-cut.png"
+import Etherea from "../../assets/images/Etherea/Etherea.png"
+import Ultraformer from "../../assets/images/Ultraformer/ultraformer-cut.png"
+import Inkie from "../../assets/images/ND YAG/Inkie.png"
 
 function AestheticsServices() {
   return(
