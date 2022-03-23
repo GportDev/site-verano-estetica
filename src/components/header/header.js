@@ -3,7 +3,6 @@ import styled from "styled-components"
 /* ------ HEADER ------ */
 export const HeaderStyle = styled.header`
   border-bottom: 1px solid #e4e4e4;
-  margin-bottom: 2rem;
   display: flex;
   position: sticky;
   top: 0;
@@ -18,7 +17,8 @@ export const HeaderStyle = styled.header`
 export const MenuWrapper = styled.div`
   margin: 0 auto;
   padding: 0 8.5rem;
-  width: 1440px;
+  max-width: 1440px;
+  width: 100%;
 `
 
 export const Menu = styled.nav`

@@ -9,7 +9,7 @@ import Contact from "../../components/contact/index.jsx";
 import Injectables from "../../components/other_services/injectables/index";
 import Manuals from "../../components/other_services/manuals/index";
 import Footer from "../../components/footer/index.jsx";
-import { Container } from "../../components/styles/styles.js";
+import { Container, PurpleDivider1, PurpleDivider2 } from "../../components/styles/styles.js";
 
 
 function VeranoEstetica() {
@@ -19,19 +19,23 @@ function VeranoEstetica() {
       <Container id="Home">
         <EsteticIntro />
       </Container>
+      <PurpleDivider1 />
       <PurpleDiv id="Platforms">
         <AestheticsServices />
+        <Container id="Procedures">
+          <Injectables />
+        </Container>
+        <Container>
+          <Manuals />
+        </Container>
       </PurpleDiv>
-      <Container id="Procedures">
-        <Injectables />
-      </Container>
-      <Container>
-        <Manuals />
-      </Container>
+      <PurpleDivider2 />
       <Container id="Testimonials">
         <Testimonials />
       </Container>
+      <PurpleDivider1 />
       <About id="About"/>
+      <PurpleDivider2 />
       <Contact id="Contact"/>
       <Footer />
     </>

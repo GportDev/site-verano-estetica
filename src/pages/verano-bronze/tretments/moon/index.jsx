@@ -17,7 +17,7 @@ function Moon() {
         <OrangeDiv>
           <TanSection>
             <ContentSection>
-              <TanSubtitle className="SectionTitle" margin="0 auto 2rem">Banho de lua</TanSubtitle>
+              <TanSubtitle className="SectionTitle" margin="0 auto 8rem">Banho de lua</TanSubtitle>
               <TanText margin="0 0 2rem">
                 O Banho de Lua é uma técnica que consiste em clarear os pelos do corpo, seja por estética, para disfarça-los, ou até para destacar o bronzeado, além de ficar com a pele macia e hidratada. <br/>
                 O banho de lua é indicado para:
@@ -51,7 +51,7 @@ function Moon() {
             </TanDiv>
           </TanSection>
         </OrangeDiv>
-        <TanSection className="images">
+        <TanSection className="images" margin="4rem auto 8rem">
           <TanSubtitle margin="0 auto 2rem" className="SectionTitle">Resultados</TanSubtitle>
           <TanDiv>
             <ResultImg src={Resultado1}/>

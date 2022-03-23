@@ -3,7 +3,7 @@ import PurpleDiv from "../../../../components/purple_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { ButtonFilled, Container, ContentSection, Subtitle, Text  } from "../../../../components/styles/styles";
-import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Picture, UltraList } from "../../styles";
+import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Picture } from "../../styles";
 import EthereaPic from "../../../../assets/images/Etherea/Etherea.png"
 
 function Etherea() {
@@ -14,7 +14,7 @@ function Etherea() {
         <PurpleDiv>
           <PlatSection>
             <ContentSection>
-              <Subtitle>Ultraformer III</Subtitle>
+              <Subtitle>Etherea MX</Subtitle>
               <BenefitsList>
                 <ListLine>Estrias</ListLine>
                 <ListLine>Melasmas</ListLine>

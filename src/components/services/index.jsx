@@ -12,7 +12,7 @@ import 'swiper/css/bundle';
 
 function AestheticsServices() {
   return(
-    <ColumnSection>
+    <ColumnSection margin="4rem auto 8rem">
       <Subtitle className="SectionTitle">Serviços e plataformas</Subtitle>
       <Text margin='4rem'>Com mais de 2 anos no mercado de estética, a Verano conquistou seus clientes com opções de tratamento exclusivas, sempre se preocupando com a saúde e bem estar do paciente.
       Dentre esses serviços temos:
@@ -20,7 +20,7 @@ function AestheticsServices() {
       <SwiperDiv>
         <Swiper
           modules={[Navigation, EffectCards]}
-          spaceBetween={15}
+          spaceBetween={-35}
           slidesPerView={3}
           navigation
         >

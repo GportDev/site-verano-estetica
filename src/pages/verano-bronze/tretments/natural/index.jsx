@@ -14,7 +14,7 @@ function Natural() {
       <Header orange/>
       <Container>
         <OrangeDiv>
-          <TanSection>
+          <TanSection margin="4rem auto 8rem">
             <ContentSection>
               <TanSubtitle className="SectionTitle" margin="0 auto 2rem">Se tem sol, tem bronze</TanSubtitle>
               <TanText margin="0 0 2rem">
@@ -48,7 +48,7 @@ function Natural() {
             <TanButtonFilled fontSize="1.5rem">Agende agora sua sessão</TanButtonFilled>
           </TanSection>
         </OrangeDiv>
-        <TanSection className="images">
+        <TanSection className="images" margin="4rem auto 8rem">
           <TanSubtitle margin="0 auto 2rem" className="SectionTitle">Resultados</TanSubtitle>
           <TanDiv>
             <ResultImg src={Resultado1}/>

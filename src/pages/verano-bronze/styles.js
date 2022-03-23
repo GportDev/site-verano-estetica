@@ -3,7 +3,7 @@ import styled from "styled-components"
 export const TanSection = styled.section`
   width: 100vw;
   max-width: 1440px;
-  margin: 4rem auto;
+  margin: ${props=> props.margin ||'4rem auto'};
   padding: 0 var(--Page-margin);
   display: flex;
   justify-content: space-between;

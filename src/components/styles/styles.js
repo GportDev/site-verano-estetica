@@ -73,15 +73,14 @@ export const Section = styled.section`
 
 export const ColorDiv = styled.div`
   position: relative;
+  padding: 3rem;
   width: 100vw;
-  display: flex;
-  flex-direction: column;
 `
 
 export const ColumnSection = styled.section`
   width: 100vw;
   max-width: 1440px;
-  margin: 4rem auto;
+  margin: ${props=> props.margin ||'4rem auto'};
   padding: 0 var(--Page-margin);
   display: flex;
   flex-direction: column;
@@ -120,6 +119,39 @@ export const Card = styled.section`
   }
 `
 
+
+
+/* ------ Dividers------ */
+export const OrangeDivider1 = styled.div`
+  content: "";
+  height: 3px;
+  width: 100vw;
+  background: linear-gradient(270deg, #F7A22A 0%, rgba(246, 226, 208, 0.2) 100.83%);
+  opacity: 30%;
+`
+export const OrangeDivider2 = styled.div`
+  content: "";
+  height: 3px;
+  width: 100vw;
+  background: linear-gradient(90deg, #F7A22A 0%, rgba(246, 226, 208, 0.2) 100.8%);
+  opacity: 30%;
+`
+export const PurpleDivider1 = styled.div`
+  content: "";
+  height: 3px;
+  width: 100vw;
+  background: linear-gradient(270deg, #D286DF 0%, rgba(250, 245, 252, 0.2) 100.83%);
+  opacity: 30%;
+`
+export const PurpleDivider2 = styled.div`
+  content: "";
+  height: 3px;
+  width: 100vw;
+  background: linear-gradient(90deg, #D286DF 0%, rgba(250, 245, 252, 0.2) 100.8%);
+  opacity: 30%;
+`
+
+
 /* ------ Images and Icons ------ */
 export const LogoVerano = styled.img`
   width: ${props => props.width};
@@ -150,6 +182,26 @@ export const Icon = styled.img`
   }
 `
 
+export const UpBackground = styled.img`
+  position: absolute;
+  opacity: 60%;
+  z-index: -1;
+  top: 0;
+  right: 0;
+  max-width: fit-content;
+  width: 46rem;
+  overflow: hidden;
+`
+export const DownBackground = styled.img`
+  position: absolute;
+  opacity: 60%;
+  z-index: -1;
+  bottom: 0;
+  left: 0;
+  max-width: fit-content;
+  width: 46rem;
+  overflow: hidden;
+`
 
 
 /* ------ Buttons ------ */

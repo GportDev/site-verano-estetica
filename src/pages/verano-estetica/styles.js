@@ -41,6 +41,9 @@ export const Equipment = styled.img`
   &.ultraformer{
     transform: scaleX(-1);
   }
+  &.etherea {
+    width: 13rem;
+  }
 `
 
 export const Picture  = styled.img`
