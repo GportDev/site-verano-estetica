@@ -5,8 +5,8 @@ import Footer from "../../../../components/footer";
 import { ButtonFilled, Container, ContentSection, Subtitle, Text  } from "../../../../components/styles/styles";
 import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Picture } from "../../styles";
 import InkiePic from "../../../../assets/images/ND_YAG/inkie.png"
-import Tratamento1 from "../../../../assets/images/ND YAG/tatoo.jpeg"
-import Tratamento2 from "../../../../assets/images/ND YAG/sobrancelha.jpeg"
+import Tratamento1 from "../../../../assets/images/ND_YAG/tatoo.jpeg"
+import Tratamento2 from "../../../../assets/images/ND_YAG/sobrancelha.jpeg"
 
 
 function Inkie() {
