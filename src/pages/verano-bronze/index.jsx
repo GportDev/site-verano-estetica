@@ -9,6 +9,7 @@ import { Container } from "../../components/styles/styles.js";
 import Tretments from "../../components/tretments/index.jsx";
 import Testimonials from "../../components/testimonials/index.jsx";
 
+
 function VeranoBronze() {
   return (
     <>

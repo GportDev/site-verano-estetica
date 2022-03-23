@@ -16,3 +16,13 @@ body {
   -webkit-font-smoothing: antialiased;
   overflow-x: hidden;
 }
+
+.swiper-wrapper {
+  padding: 0.5rem 0;
+}
+
+.swiper-button-next, .swiper-button-prev {
+  margin: 0 -0.5rem;
+  color: var(--Principal-purple);
+}
+

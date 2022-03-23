@@ -40,10 +40,10 @@ export const TanSubtitle = styled.h2`
   position: ${props => props.position};
   margin: ${props => props.margin};
   font-family: 'Poppins';
-  font-weight: 700;
+  font-weight: ${props => props.fontWeight || '700'};
   font-style: bold;
   font-size: 2rem;
-  line-height: 3.5rem;
+  line-height: ${props => props.lineHeight || '3.5rem'};
   color: var(--Dark-orange);
   &.SectionTitle {
     font-size: 2.5rem;
@@ -88,6 +88,11 @@ export const TanButtonFilled = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  &.platform {
+    position: absolute;
+    bottom: 3rem;
+    right: 4.9rem;
+  }
 `
 
 export const CardImg = styled.img`

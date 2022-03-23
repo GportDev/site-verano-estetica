@@ -29,6 +29,10 @@ export const Subtitle = styled.h2`
     font-size: 2rem;
     font-weight: 500;
   }
+  &.platform {
+    line-height: 2rem;
+    font-weight: 600;
+  }
 `
 
 export const Text = styled.p`
@@ -89,7 +93,15 @@ export const ContentSection = styled.div`
   text-align: center;
 `
 
+export const SwiperDiv = styled.div`
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: row;
+`
+
 export const Card = styled.section`
+  position: relative;
   margin: ${props => props.margin || '0 auto'};
   padding: ${props => props.padding || '0 2.75rem'};
   background: #f9f9f9;
@@ -98,8 +110,9 @@ export const Card = styled.section`
   border-radius: 1rem;
   text-align: center;
   &.service {
-    width: 24rem;
-    padding: 2rem;
+    width: 20rem;
+    height: 48rem;
+    padding: 2rem 1rem;
     border-bottom: 10px solid var(--Principal-purple);
   }
   &.taning {
@@ -122,9 +135,19 @@ export const Imagem = styled.img`
   box-shadow: ${props => props.shadow || '0px 0px 12px rgba(0, 0, 0, 0.35)'};
 `
 
-export const Icon = styled.svg`
+export const Icon = styled.img`
+  margin: 0 1rem 0 0;
   width: 2rem;
   height: 2rem;
+  &.wpp {
+    width: 2.5rem;
+    height: 2.5rem;
+  }
+  &.arrow{
+    margin: auto;
+    width: 3rem;
+    height: 2rem;
+  }
 `
 
 
@@ -158,4 +181,9 @@ export const ButtonFilled = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
+  &.platform {
+    position: absolute;
+    bottom: 3rem;
+    right: 4.9rem;
+  }
 `

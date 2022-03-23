@@ -9,6 +9,8 @@ export const List = styled.ul`
 `
 
 export const ListItem = styled.li`
+  display: flex;
+  align-items: center;
   font-size: 1.5rem;
   line-height: ${props => props.lineHeight};
 `

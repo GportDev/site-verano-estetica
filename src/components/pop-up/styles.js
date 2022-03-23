@@ -2,6 +2,7 @@ import styled from "styled-components";
 
 export const Popup = styled.div`
   position: fixed;
+  z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
@@ -32,8 +33,10 @@ export const PopupInner = styled.section`
 
 export const Back = styled.button`
   position: absolute;
-  font-size: 1.5rem;
-  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1.25rem;
   clip-path: circle();
   top: 2rem;
   left: 2rem;
