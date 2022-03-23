@@ -26,5 +26,6 @@ export const Procedure = styled.li`
 `
 export const TableLink = styled.a`
   text-decoration: none;
-  color: var(--Text) ; 
+  color: var(--Text) ;
+  cursor: pointer;
 ` 

@@ -50,4 +50,10 @@ export const MenuLink = styled.a`
     color: var(--Highlight-purple);
     transition: color 0.3s;
   }
+  &.taning {
+    :hover {
+      color: var(--Strong-orange);
+      transition: color 0.3s;
+    }
+  }
 `

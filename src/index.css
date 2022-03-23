@@ -2,6 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
 }
 
 .material-icons.dark-purple { color: #23042F; }
@@ -12,4 +14,5 @@ body {
   color: #525252;
   background: rgba(256,256,265, 0.98);
   -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
 }

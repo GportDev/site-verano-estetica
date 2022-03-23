@@ -24,6 +24,11 @@ export const Subtitle = styled.h2`
   &.SectionTitle {
     font-size: 2.5rem;
   }
+  &.PopupSubtitle {
+    margin: 1rem 0;
+    font-size: 2rem;
+    font-weight: 500;
+  }
 `
 
 export const Text = styled.p`
@@ -53,6 +58,7 @@ export const Container = styled.div`
 `
 
 export const Section = styled.section`
+  width: 100vw;
   max-width: 1440px;
   margin: ${props=> props.margin ||'4rem auto'};
   padding: 0 var(--Page-margin);
@@ -69,7 +75,8 @@ export const ColorDiv = styled.div`
 `
 
 export const ColumnSection = styled.section`
-  width: 1440px;
+  width: 100vw;
+  max-width: 1440px;
   margin: 4rem auto;
   padding: 0 var(--Page-margin);
   display: flex;
@@ -91,11 +98,16 @@ export const Card = styled.section`
   border-radius: 1rem;
   text-align: center;
   &.service {
-    width: 26rem;
+    width: 24rem;
     padding: 2rem;
+    border-bottom: 10px solid var(--Principal-purple);
+  }
+  &.taning {
+    border-bottom: 10px solid var(--Strong-orange);
   }
 `
 
+/* ------ Images and Icons ------ */
 export const LogoVerano = styled.img`
   width: ${props => props.width};
   height: ${props => props.height};
@@ -109,6 +121,12 @@ export const Imagem = styled.img`
   border-radius: 1rem;
   box-shadow: ${props => props.shadow || '0px 0px 12px rgba(0, 0, 0, 0.35)'};
 `
+
+export const Icon = styled.svg`
+  width: 2rem;
+  height: 2rem;
+`
+
 
 
 /* ------ Buttons ------ */

@@ -11,6 +11,7 @@ import Manuals from "../../components/other_services/manuals/index";
 import Footer from "../../components/footer/index.jsx";
 import { Container } from "../../components/styles/styles.js";
 
+
 function VeranoEstetica() {
   return (
     <>

@@ -1,7 +1,24 @@
 import { ProceduresTable, Procedure, TableLink } from "../styles";
 import { Subtitle, Section, ContentSection, Text } from "../../styles/styles"
+import {useState} from 'react';
+import Botox from "../injectables/popups/botox/index.jsx"
+import Acid from "./popups/acid";
+import Bioestimulator from "./popups/bioestimulator";
+import Dermarroller from "./popups/dermaroller";
+import Skinbooster from "./popups/skinbooster";
+import Lipo from "./popups/lipo";
+import Pdo from "./popups/pdo";
+
 
 function Injectables() {
+  const [botoxPopup, setBotoxPopup] = useState(false);
+  const [acidPopup, setAcidPopup] = useState(false);
+  const [bioestPopup, setBioestPopup] = useState(false);
+  const [dermarollerPopup, setDermarollerPopup] = useState(false);
+  const [skinboosterPopup, setSkinboosterPopup] = useState(false);
+  const [lipoPopup, setLipoPopup] = useState(false);
+  const [pdoPopup, setPDOPopup] = useState(false);
+
   return(
     <Section>
       <ContentSection>
@@ -12,14 +29,21 @@ function Injectables() {
         </Text>
       </ContentSection>
       <ProceduresTable>
-        <TableLink href="#"><Procedure>Toxina Botulínica</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Preenchedores com ácido hialurônico</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Bioestimuladores de colágeno</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Microagulhamento com dermaroller</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Intradermoterapia e Skinbooster</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Lipo enzimática de Papada</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Fios de PDO</Procedure></TableLink>
+        <TableLink onClick={setBotoxPopup}><Procedure>Toxina Botulínica</Procedure></TableLink>
+        <TableLink onClick={setAcidPopup}><Procedure>Preenchedores com ácido hialurônico</Procedure></TableLink>
+        <TableLink onClick={setBioestPopup}><Procedure>Bioestimuladores de colágeno</Procedure></TableLink>
+        <TableLink onClick={setDermarollerPopup}><Procedure>Microagulhamento com dermaroller</Procedure></TableLink>
+        <TableLink onClick={setSkinboosterPopup}><Procedure>Intradermoterapia e Skinbooster</Procedure></TableLink>
+        <TableLink onClick={setLipoPopup}><Procedure>Lipo enzimática de Papada</Procedure></TableLink>
+        <TableLink onClick={setPDOPopup}><Procedure>Fios de PDO</Procedure></TableLink>
       </ProceduresTable>
+      <Botox trigger={botoxPopup} setTrigger={setBotoxPopup}/>
+      <Acid trigger={acidPopup} setTrigger={setAcidPopup}/>
+      <Bioestimulator trigger={bioestPopup} setTrigger={setBioestPopup}/>
+      <Dermarroller trigger={dermarollerPopup} setTrigger={setDermarollerPopup}/>
+      <Skinbooster trigger={skinboosterPopup} setTrigger={setSkinboosterPopup}/>
+      <Lipo trigger={lipoPopup} setTrigger={setLipoPopup}/>
+      <Pdo trigger={pdoPopup} setTrigger={setPDOPopup}/>
     </Section>
   )
 }

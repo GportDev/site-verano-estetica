@@ -6,6 +6,9 @@ export const FooterBody = styled.footer`
   height: 6rem;
   background: var(--Principal-purple);
   width: 100%;
+  &.orange {
+    background: var(--Skin-orange);
+  }
 `
 
 export const FooterWrapper = styled.div`

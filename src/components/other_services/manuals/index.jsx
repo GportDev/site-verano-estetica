@@ -1,15 +1,24 @@
 import { ProceduresTable, Procedure, TableLink } from "../styles.js";
-
 import { Section, ContentSection, Subtitle, Text } from "../../styles/styles";
+import {useState} from 'react';
+import Drenagem from "./popups/drenagem/index.jsx";
+import Fisioterapia from "./popups/fisioterapia/index.jsx"
+import Massagem from "./popups/massagens/index.jsx"
+import Peeling from "./popups/peeling/index.jsx";
 
 function Manuals() {
+  const [drenagemPopup, setDrenagemPopup] = useState(false);
+  const [fisioPopup, setFisioPopup] = useState(false);
+  const [massagemPopup, setMassagemPopup] = useState(false);
+  const [peelingPopup, setPeelingPopup] = useState(false);
+
   return(
     <Section margin="6rem auto" >
       <ProceduresTable>
-        <TableLink href="#"><Procedure>Drenagem linfática manual</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Fisioterapia Pélvica</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Massagem</Procedure></TableLink>
-        <TableLink href="#"><Procedure>Peeling</Procedure></TableLink>
+        <TableLink onClick={setDrenagemPopup}><Procedure>Drenagem linfática manual</Procedure></TableLink>
+        <TableLink onClick={setFisioPopup}><Procedure>Fisioterapia Pélvica</Procedure></TableLink>
+        <TableLink onClick={setMassagemPopup}><Procedure>Massagem</Procedure></TableLink>
+        <TableLink onClick={setPeelingPopup}><Procedure>Peeling</Procedure></TableLink>
       </ProceduresTable>
       <ContentSection>
         <Subtitle>Procedimentos Manuais</Subtitle>
@@ -18,6 +27,10 @@ function Manuals() {
           Nossos procedimentos estão listados na tabela ao lado.
         </Text>
       </ContentSection>
+      <Drenagem trigger={drenagemPopup} setTrigger={setDrenagemPopup}/>
+      <Fisioterapia trigger={fisioPopup} setTrigger={setFisioPopup}/>
+      <Massagem trigger={massagemPopup} setTrigger={setMassagemPopup}/>
+      <Peeling trigger={peelingPopup} setTrigger={setPeelingPopup}/>
     </Section>
   )
 }

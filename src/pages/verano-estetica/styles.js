@@ -1,7 +1,8 @@
 import styled from "styled-components";
 
 export const PlatSection = styled.section`
-  width: 1440px;
+  width: 100vw;
+  max-width: 1440px;
   margin: 4rem auto;
   padding: 0 var(--Page-margin);
   display: flex;
