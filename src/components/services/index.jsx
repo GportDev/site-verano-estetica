@@ -3,7 +3,7 @@ import { MachineAvatar, NameTitle} from "./styles";
 import Soprano from "../../assets/images/Soprano/Soprano-cut.png";
 import Etherea from "../../assets/images/Etherea/Etherea.png";
 import Ultraformer from "../../assets/images/Ultraformer/ultraformer-cut.png";
-import Inkie from "../../assets/images/ND YAG/Inkie.png";
+import Inkie from "../../assets/images/ND_YAG/Inkie.png";
 
 import { EffectCards, Navigation } from 'swiper';
 import { Swiper, SwiperSlide } from 'swiper/react';
