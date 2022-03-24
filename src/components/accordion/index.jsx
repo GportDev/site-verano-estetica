@@ -22,17 +22,17 @@ function Accordion(props) {
         <Container>
           {(props.data).map((item, index) => {
             return (
-              <>
-                <Wrap onClick={() => toggle(index)} key={index}>
-                  <h2>{item.question}</h2>
+              <div key={index}>
+                <Wrap onClick={() => toggle(index)} key={item}>
+                  <h3>{item.question}</h3>
                   <span>{clicked === index ? <FiMinus /> : <FiPlus />}</span>
                 </Wrap>
                 {clicked === index ? (
                   <Dropdown>
-                    <Text>{item.answer}</Text>
+                    <Text >{item.answer}</Text>
                   </Dropdown>
                 ) : null}
-              </>
+              </div>
             )
           })}
         </Container>

@@ -26,6 +26,10 @@ export const Wrap = styled.div`
   transition: transform 0.3s ease;
   cursor: pointer;
 
+  h3 {
+    font-size: 1.5rem;
+  }
+
   span {
     margin-right: 1.5rem;
     transition: transform 0.2s;

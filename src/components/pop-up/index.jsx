@@ -1,12 +1,15 @@
-import { Icon } from "../styles/styles";
-import { Popup, PopupInner, Back } from "./styles"
-import Arrow from "../../assets/icons/arrow-back.png"
+import { Popup, PopupInner } from "./styles"
+import { useClickOutside } from "../../utils/hooks/useClickOutside";
 
 function PopupCard(props) {
+
+  let domNode = useClickOutside(() => {
+    props.setTrigger(false)
+  })
+  
   return (props.trigger) ? (
     <Popup>
-      <PopupInner className={props.newClassName}>
-        <Back onClick={() => props.setTrigger(false)}> <Icon src={Arrow} className="arrow"/> </Back>
+      <PopupInner ref={domNode} className={props.newClassName}>
         {props.children}
       </PopupInner>
     </Popup>

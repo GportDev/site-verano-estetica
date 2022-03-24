@@ -29,13 +29,13 @@ function Injectables() {
         </Text>
       </ContentSection>
       <ProceduresTable>
-        <TableLink onClick={setBotoxPopup}><Procedure>Toxina Botulínica</Procedure></TableLink>
-        <TableLink onClick={setAcidPopup}><Procedure>Preenchedores com ácido hialurônico</Procedure></TableLink>
-        <TableLink onClick={setBioestPopup}><Procedure>Bioestimuladores de colágeno</Procedure></TableLink>
-        <TableLink onClick={setDermarollerPopup}><Procedure>Microagulhamento com dermaroller</Procedure></TableLink>
-        <TableLink onClick={setSkinboosterPopup}><Procedure>Intradermoterapia e Skinbooster</Procedure></TableLink>
-        <TableLink onClick={setLipoPopup}><Procedure>Lipo enzimática de Papada</Procedure></TableLink>
-        <TableLink onClick={setPDOPopup}><Procedure>Fios de PDO</Procedure></TableLink>
+        <TableLink onClick={setBotoxPopup} key={1}><Procedure>Toxina Botulínica</Procedure></TableLink>
+        <TableLink onClick={setAcidPopup} key={2}><Procedure>Preenchedores com ácido hialurônico</Procedure></TableLink>
+        <TableLink onClick={setBioestPopup} key={3}><Procedure>Bioestimuladores de colágeno</Procedure></TableLink>
+        <TableLink onClick={setDermarollerPopup} key={4}><Procedure>Microagulhamento com dermaroller</Procedure></TableLink>
+        <TableLink onClick={setSkinboosterPopup} key={5}><Procedure>Intradermoterapia e Skinbooster</Procedure></TableLink>
+        <TableLink onClick={setLipoPopup} key={6}><Procedure>Lipo enzimática de Papada</Procedure></TableLink>
+        <TableLink onClick={setPDOPopup} key={7}><Procedure>Fios de PDO</Procedure></TableLink>
       </ProceduresTable>
       <Botox trigger={botoxPopup} setTrigger={setBotoxPopup}/>
       <Acid trigger={acidPopup} setTrigger={setAcidPopup}/>

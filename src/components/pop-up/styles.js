@@ -15,10 +15,11 @@ export const Popup = styled.div`
 
 export const PopupInner = styled.section`
   position: relative;
-  padding: 6rem 3rem 3rem;
+  padding: 2rem 3rem;
   width: 100%;
   max-width: 65rem;
   max-height: 80%;
+  
   background-color: #f9f9f9;
   border-radius: 1rem;
   box-shadow: var(--Shadow);
@@ -26,25 +27,14 @@ export const PopupInner = styled.section`
   justify-content: center;
   flex-wrap: wrap;
   overflow-y: scroll;
+  ::-webkit-scrollbar{
+    display: none;
+  }
   &.listPopup {
     flex-direction: column;
   }
 `
 
-export const Back = styled.button`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  padding: 1.25rem;
-  clip-path: circle();
-  top: 2rem;
-  left: 2rem;
-  background-color: var(--Principal-purple);
-  border: none;
-  box-shadow: var(--Shadow);
-  cursor: pointer;
-`
 
 export const PopupText = styled.p`
   position: ${props => props.position};
