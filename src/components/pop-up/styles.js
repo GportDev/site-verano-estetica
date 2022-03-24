@@ -59,6 +59,11 @@ export const PopupText = styled.p`
   }
 `
 
+export const QaDiv = styled.div`
+  width: 100%;
+`
+
+
 export const PopupList = styled.ul`
   font-size: 1.25rem;
   list-style-position: inside;

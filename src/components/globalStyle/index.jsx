@@ -22,7 +22,7 @@ export const GlobalStyle = createGlobalStyle`
   --Background2: rgba(256,256,265, 0.98);
 
   /* EFFECTS */
-  --Shadow: 2px 2px 6px rgba(0, 0, 0, 0.25), inset 2px 2px 6px rgba(208, 208, 208, 0.25); ;
+  --Shadow: 2px 2px 8px rgba(0, 0, 0, 0.15);
   --Border-radius: 1rem;
 
   /* SIZES */
