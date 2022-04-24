@@ -24,11 +24,6 @@ export const Subtitle = styled.h2`
   &.SectionTitle {
     font-size: 2.5rem;
   }
-  &.PopupSubtitle {
-    margin: 1rem 0;
-    font-size: 2rem;
-    font-weight: 500;
-  }
   &.platform {
     line-height: 2rem;
     font-weight: 600;

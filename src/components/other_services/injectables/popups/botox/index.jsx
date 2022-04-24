@@ -9,7 +9,7 @@ import { BotoxData } from "../../../../accordion/data.js";
 function Botox(props) {  
   return (
     <PopupCard trigger={props.trigger} setTrigger={props.setTrigger}>
-      <Subtitle>Toxina Botulínica</Subtitle>
+      <Subtitle className="SectionTitle">Toxina Botulínica</Subtitle>
       <PopupText>
         A Toxina Botulínica é indicada principalmente para amenizar linhas de expressão, geradas pelo movimento repetitivo nas regiões de testa, glabela, e “pés de galinha”.
       </PopupText>

@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import { IconContext } from "react-icons"
 import {FiPlus, FiMinus} from "react-icons/fi"
 import { Text } from "../styles/styles"
-import { AccordionDiv, Container, Wrap, Dropdown } from "./style"
+import { AccordionDiv, Wrap, Dropdown } from "./style"
 
 function Accordion(props) {
   const [clicked, setClicked] = useState(false)
@@ -19,7 +19,6 @@ function Accordion(props) {
   return (
     <IconContext.Provider value={{ color: '#D465E7', size: '25px'}}>
       <AccordionDiv>
-        <Container>
           {(props.data).map((item, index) => {
             return (
               <div key={index}>
@@ -35,7 +34,6 @@ function Accordion(props) {
               </div>
             )
           })}
-        </Container>
       </AccordionDiv>
     </IconContext.Provider>
   )

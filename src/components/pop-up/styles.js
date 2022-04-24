@@ -15,30 +15,26 @@ export const Popup = styled.div`
 
 export const PopupInner = styled.section`
   position: relative;
+  margin-top: 4rem;
   padding: 2rem 3rem;
   width: 100%;
   max-width: 65rem;
-  max-height: 80%;
-  
+  height: 75%;
   background-color: #f9f9f9;
   border-radius: 1rem;
   box-shadow: var(--Shadow);
   display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
+  flex-direction: column;
   overflow-y: scroll;
   ::-webkit-scrollbar{
     display: none;
-  }
-  &.listPopup {
-    flex-direction: column;
   }
 `
 
 
 export const PopupText = styled.p`
   position: ${props => props.position};
-  margin-top: 2rem;
+  margin-top: ${props => props.marginTop || '2rem'};
   margin-bottom: ${props => props.marginBottom};
   font-family: DM Sans;
   font-size: 1.20rem;
