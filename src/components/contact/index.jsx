@@ -1,8 +1,6 @@
 import { ButtonFilled, ColumnSection, Icon, Imagem, Subtitle, Text } from "../styles/styles"
 import { List, ListItem, Section, ContentSection } from "./styles"
 import QRCode from "../../assets/images/QRCode-Verano-Estetica.png"
-import PurpleDiv from "../purple_div"
-import OrangeDiv from "../orange_div"
 import { TanSubtitle, TanText, TanButtonFilled} from "../../pages/verano-bronze/styles"
 
 import OrangePhone from "../../assets/icons/orange-phone.png"

@@ -1,13 +1,13 @@
 import styled from "styled-components";
 
-/* ------ COMMOM ------ */
+/* ------ Typography ------ */
 export const Title = styled.h1`
   position: ${props => props.position};
   margin: ${props => props.margin};
   font-family: 'Poppins';
   font-weight: 700;
   font-style: bold;
-  font-size: 3rem;
+  font-size: var(--H1);
   line-height: 3.5rem;
   color: var(--Dark-purple);
 `
@@ -16,9 +16,9 @@ export const Subtitle = styled.h2`
   position: ${props => props.position};
   margin: ${props => props.margin};
   font-family: 'Poppins';
-  font-weight: 700;
+  font-weight: 600;
   font-style: bold;
-  font-size: 2rem;
+  font-size: var(--H2);
   line-height: 3.5rem;
   color: var(--Dark-purple);
   &.SectionTitle {
