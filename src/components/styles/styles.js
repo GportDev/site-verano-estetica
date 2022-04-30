@@ -27,6 +27,7 @@ export const Subtitle = styled.h2`
   line-height: 3.5rem;
   color: var(--Dark-purple);
   &.platform {
+    font-size: var(--H3);
     line-height: 2rem;
     font-weight: 600;
   }
@@ -79,7 +80,7 @@ export const ColorDiv = styled.div`
 export const ColumnSection = styled.section`
   max-width: 1170px;
   margin: ${props=> props.margin ||'4rem auto'};
-  padding: 0 var(--Page-padding);
+  padding: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -91,10 +92,8 @@ export const ContentSection = styled.div`
 `
 
 export const SwiperDiv = styled.div`
+  margin: 0 auto;
   width: 100%;
-  height: 100%;
-  display: flex;
-  flex-direction: row;
 `
 
 export const Card = styled.section`
@@ -102,16 +101,10 @@ export const Card = styled.section`
   margin: ${props => props.margin || '0 auto'};
   padding: ${props => props.padding || '0 2.75rem'};
   background: #f9f9f9;
-  width: ${props => props.width || '36rem'};
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);
   border-radius: 1rem;
   text-align: center;
-  &.service {
-    width: 20rem;
-    height: 48rem;
-    padding: 2rem 1rem;
-    border-bottom: 10px solid var(--Principal-purple);
-  }
+  
   &.taning {
     border-bottom: 10px solid var(--Strong-orange);
   }

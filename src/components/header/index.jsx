@@ -1,8 +1,7 @@
 import React from "react";
-import { HeaderStyle, Menu, MenuItems, MenuItem, MenuLink} from "./header";
+import { HeaderStyle, Menu, MenuItems, MenuItem, MenuLink, MenuHamb} from "./header";
 import { LogoVerano } from "../styles/styles.js";
 import Logo from "../../assets/images/Logo Verano.png"
-import { MenuHamb } from "../services/styles";
 
 function Header(props) {
   return(props.orange) ? (

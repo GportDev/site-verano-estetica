@@ -1,4 +1,5 @@
 import styled from "styled-components"
+import { FiMenu } from 'react-icons/fi';
 
 /* ------ HEADER ------ */
 export const HeaderStyle = styled.header`
@@ -48,4 +49,11 @@ export const MenuLink = styled.a`
       transition: color 0.3s;
     }
   }
+`
+
+export const MenuHamb = styled(FiMenu)`
+  color: ${props => props.color};
+  width: 1.75rem;
+  height: 1.75rem;
+  cursor: pointer;
 `

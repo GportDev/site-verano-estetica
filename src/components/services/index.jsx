@@ -1,5 +1,5 @@
-import { ColumnSection, SwiperDiv, Card, Subtitle, ButtonFilled} from "../styles/styles";
-import { MachineAvatar, NameTitle, Text} from "./styles";
+import { ColumnSection, SwiperDiv, Subtitle } from "../styles/styles";
+import { MachineAvatar, NameTitle, Text, Card, CardButton, ButtonDiv } from "./styles";
 import Soprano from "../../assets/images/Soprano/Soprano-cut.png";
 import Etherea from "../../assets/images/Etherea/Etherea.png";
 import Ultraformer from "../../assets/images/Ultraformer/ultraformer-cut.png";
@@ -21,23 +21,37 @@ function AestheticsServices() {
       <SwiperDiv>
         <Swiper
           modules={[Navigation, EffectCards]}
-          spaceBetween={-35}
-          slidesPerView={3}
+          slidesPerView={1}
+          spaceBetween={20}
           navigation
+          breakpoints={{
+            600: {
+              slidesPerView: 2,
+              spaceBetween: 10
+            },
+            1000: {
+              slidesPerView: 3,
+              spaceBetween: 0
+            }
+          }}
         >
           <SwiperSlide>
-            <Card className="service">
+            <Card>
               <Subtitle margin="0 0 2rem" className="platform">Depilação a laser</Subtitle>
               <MachineAvatar src={Soprano}/>
               <NameTitle margin="2rem 0">Soprano Ice Laser de Diodo</NameTitle>
               <Text margin="0 0 1.5rem">
                 Tecnologia de padrão OURO, com sessões indolores, podendo ser aplicado em todos fototipos de pele, até mesmo sobre a pele bronzeada.
               </Text>
-              <ButtonFilled fontSize="1.5rem" href="#/verano-estetica/soprano" className="platform">Saiba mais</ButtonFilled>
+              <ButtonDiv>
+                <CardButton fontSize="1.5rem" href="#/verano-estetica/soprano">
+                  Saiba mais
+                </CardButton>
+              </ButtonDiv>
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            <Card className="service">
+            <Card>
               <Subtitle margin="0 0 2rem" className="platform">Ultrassom estético</Subtitle>
               <MachineAvatar src={Ultraformer}/>
               <NameTitle margin="2rem 0">Ultraformer III</NameTitle>
@@ -45,29 +59,40 @@ function AestheticsServices() {
                 Ultrassom microfocado e macrofocado. Oferecendo ao paciente tratamentos faciais e corporais sem a necessidade de cirurgia.
                 Além da recuperação de colágeno para regiões tratadas.
               </Text>
-              <ButtonFilled fontSize="1.5rem" href="#/verano-estetica/ultraformer" className="platform">Saiba mais</ButtonFilled>
+              <ButtonDiv>
+                <CardButton fontSize="1.5rem" href="#/verano-estetica/ultraformer" >Saiba mais
+                </CardButton>
+              </ButtonDiv>
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            <Card className="service">
+            <Card>
               <Subtitle margin="0 0 2rem" className="platform">Plataforma multifuncional</Subtitle>
               <MachineAvatar src={Etherea}/>
               <NameTitle margin="2rem 0">Etherea MX</NameTitle>
               <Text margin="0 0 1.5rem">
                 Plataforma que associa lasers de intensidade regulável com ponteiras especificas para diferentes tratamentos. Mais de 70 procedimentos podem ser realizados, desde lifting facial até a remoção de tatuagens coloridas.
               </Text>
-              <ButtonFilled fontSize="1.5rem" href="#/verano-estetica/etherea" className="platform">Saiba mais</ButtonFilled>
+              <ButtonDiv>
+                <CardButton fontSize="1.5rem" href="#/verano-estetica/etherea">
+                  Saiba mais
+                </CardButton>
+              </ButtonDiv>
             </Card>
           </SwiperSlide>
           <SwiperSlide>
-            <Card className="service">
+            <Card>
               <Subtitle margin="0 0 2rem" className="platform">Remoção de tatuagens e pigmentos</Subtitle>
               <MachineAvatar src={Inkie}/>
               <NameTitle margin="2rem 0">Inkie ND YAG Q switched</NameTitle>
               <Text margin="0 0 1.5rem">
                 Peeling de Hollywood, blackpeel, tratamentos de melasma, remoção de tatuagem e muito mais!
               </Text>
-              <ButtonFilled fontSize="1.5rem" href="#/verano-estetica/inkie" className="platform">Saiba mais</ButtonFilled>
+              <ButtonDiv>
+                <CardButton fontSize="1.5rem" href="#/verano-estetica/inkie" className="platform">
+                  Saiba mais
+                </CardButton>
+              </ButtonDiv>
             </Card>
           </SwiperSlide>
         </Swiper>

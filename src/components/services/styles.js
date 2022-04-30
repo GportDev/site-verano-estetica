@@ -1,8 +1,40 @@
 import styled from 'styled-components';
-import { FiMenu } from 'react-icons/fi';
+import { ButtonFilled } from '../styles/styles';
 
+export const Card = styled.div`
+  position: relative;
+
+  margin: 0 auto;
+  padding: 2rem 1rem;
+
+  max-width: 20rem;
+  height: 48rem;
+  text-align: center;
+  
+  border-bottom: 10px solid var(--Principal-purple);
+  border-radius: 1rem;
+
+  background: #f9f9f9;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);
+
+  @media(max-width: 400px) {
+    max-width: 18rem;
+  }
+`
 export const MachineAvatar = styled.img`
   max-height: 12rem;
+`
+
+export const ButtonDiv = styled.div`
+  position: absolute;
+  width: 90%;
+  display: flex;
+  justify-content: center;
+  bottom: 2rem;
+`
+
+export const CardButton = styled(ButtonFilled)`
+
 `
 
 export const NameTitle = styled.h3`
@@ -30,11 +62,4 @@ export const Text = styled.p`
   @media(max-width: 800px) {
     margin: 2rem auto;
   }
-`
-
-export const MenuHamb = styled(FiMenu)`
-  color: ${props => props.color};
-  width: 1.75rem;
-  height: 1.75rem;
-  cursor: pointer;
 `
