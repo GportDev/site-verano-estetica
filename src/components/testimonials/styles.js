@@ -1,25 +1,50 @@
 import styled from "styled-components";
 
 export const TestimonialSection = styled.section`
-  max-width: 1440px;
-  padding: 0 var(--Page-margin) ;
+  max-width: 1170px;
+  padding: 0 1rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   margin: var(--Text-to-image) auto;
 `
-export const Swiper = styled.div`
+export const Container = styled.div`
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  &.services {
-    gap: 2.5rem ;
+  flex-direction: column;
+  align-items: center;
+`
+
+export const Imagem = styled.img`
+  margin: 0 auto;
+  max-width: 80%;
+  border-radius: 1rem;
+  box-shadow: ${props => props.shadow || '0px 0px 12px rgba(0, 0, 0, 0.35)'};
+  @media(max-width: 800px) {
+    max-width: 100%;
   }
 `
 
-export const Testimonial = styled.div`
-  max-width: 34rem;
-  justify-content: center;
+export const SwiperDiv = styled.div`
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  @media(max-width: 800px) {
+    flex-direction: column;
+  }
+`
+
+export const Card = styled.section`
+  margin: 1rem auto;
+  padding: 1.5rem;
+  background: #f9f9f9;
+  box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);
+  border-radius: 1rem;
+  text-align: center;
+  max-width: 65%;
+  @media(max-width: 800px) {
+    max-width: 85%;
+    margin: 1rem auto 6rem;
+  }
 `
 
 export const Avatar = styled.div`

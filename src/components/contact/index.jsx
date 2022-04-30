@@ -1,16 +1,7 @@
-import { ButtonFilled, ColumnSection, Icon, Imagem, Subtitle, Text } from "../styles/styles"
-import { List, ListItem, Section, ContentSection } from "./styles"
+import { ButtonFilled, ColumnSection, Imagem, Subtitle, Text } from "../styles/styles"
+import { List, ListItem, Section, ContentSection, Whatsapp, Phone, Pin, Mail } from "./styles"
 import QRCode from "../../assets/images/QRCode-Verano-Estetica.png"
 import { TanSubtitle, TanText, TanButtonFilled} from "../../pages/verano-bronze/styles"
-
-import OrangePhone from "../../assets/icons/orange-phone.png"
-import OrangeMail from "../../assets/icons/orange-mail.png"
-import OrangePin from "../../assets/icons/orange-pin.png"
-import PurplePhone from "../../assets/icons/purple-phone.png"
-import PurpleMail from "../../assets/icons/purple-mail.png"
-import PurplePin from "../../assets/icons/purple-pin.png"
-import Wpp from "../../assets/icons/wpp.png"
-
 
 
 function Contact(props) {
@@ -22,7 +13,7 @@ function Contact(props) {
           Entre em contato com a <strong>Verano</strong>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
         </TanText>
         <TanButtonFilled fontSize="1.25rem">
-          <Icon src={Wpp} className="wpp"/>
+          <Whatsapp/>
           Entrar em contato
         </TanButtonFilled>
         <Section>
@@ -35,15 +26,15 @@ function Contact(props) {
           <ContentSection>
             <List>
               <ListItem>
-                <Icon src={OrangePhone}/>
+                <Phone color="var(--Text-orange)"/>
                 (12) 98194-2768
               </ListItem>
               <ListItem lineHeight="2rem" >
-                <Icon src={OrangePin}/>
+                <Pin color="var(--Text-orange)"/>
                 Rua Tomás Antônio Gonzaga, 92,<br/> Vila Ema - São José dos Campos
               </ListItem>
               <ListItem>
-                <Icon src={OrangeMail}/>
+                <Mail color="var(--Text-orange)"/>
                 diretoria.verano@gmail.com
               </ListItem>
             </List>
@@ -54,6 +45,7 @@ function Contact(props) {
   ) : (
     <>
       <ColumnSection>
+
         <Subtitle>
           Fale com a gente!
         </Subtitle>
@@ -61,9 +53,10 @@ function Contact(props) {
           Entre em contato com a <strong>Verano</strong>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
         </Text>
         <ButtonFilled fontSize="1.25rem">
-          <Icon src={Wpp} className="wpp"/>
+          <Whatsapp/>
           Entrar em contato
         </ButtonFilled>
+
         <Section>
           <ContentSection>
             <Subtitle margin="1.25rem 0">
@@ -71,23 +64,25 @@ function Contact(props) {
             </Subtitle>
             <Imagem src={QRCode} shadow="0" width="16rem"/>
           </ContentSection>
+
           <ContentSection>
             <List>
               <ListItem>
-                <Icon src={PurplePhone} />
+                <Phone color="var(--Principal-purple)"/>
                 (12) 98194-2768
               </ListItem>
               <ListItem lineHeight="2rem">
-                <Icon src={PurplePin}/>
+                <Pin color="var(--Principal-purple)"/>
                 Rua Viena, 133, Jd Oswaldo Cruz,<br/> São José dos Campos - <br/> Ao lado do Center Vale Shopping
               </ListItem>
               <ListItem>
-                <Icon src={PurpleMail}/>
+                <Mail color="var(--Principal-purple)"/>
                 diretoria.verano@gmail.com
               </ListItem>
             </List>
           </ContentSection>
         </Section>
+
       </ColumnSection>
     </>
   );

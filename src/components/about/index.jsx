@@ -1,4 +1,4 @@
-import { ContentSection, Section, Card, Subtitle, Text } from "../styles/styles"
+import { ContentSection, Section, Card, Subtitle, Text, ColumnSection } from "../styles/styles"
 import { TanSubtitle, TanText } from "../../pages/verano-bronze/styles"
 import WavesDiv from "../waves_div";
 
@@ -21,15 +21,13 @@ function About(props) {
               Venha conhecer essas experiências únicas disponíveis em nosso espaço!
             </TanText>
           </ContentSection>
-          <Card>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit fugiat voluptate vel eaque. Voluptate similique repudiandae cum aut ut minima molestiae sequi commodi porro inventore consequuntur, obcaecati maiores. Sint?</Card>
         </Section>
       </WavesDiv>
     </>
   ) : (
     <>
       <WavesDiv>
-        <Section>
-          <ContentSection>
+        <ColumnSection>
             <Subtitle className="SectionTitle">Sobre nós</Subtitle>
             <Text align='justify' margin='2.6rem 0'>
               Fundada no final de 2019, a <strong color="#D465E7">Verano</strong> busca com seu nome trazer algo que traga a essência do verão para a estética, com cuidados que proporcionam beleza, bem estar e saúde para os clientes.
@@ -39,9 +37,7 @@ function About(props) {
               A cada nova etapa estaremos trazendo novos serviços com a mais alta tecnologia do mercado, agregando valor e qualidade aos nossos serviços.<br/><br/>
               Venha conhecer essas experiências únicas disponíveis em nosso espaço!
             </Text>
-          </ContentSection>
-          <Card>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit fugiat voluptate vel eaque. Voluptate similique repudiandae cum aut ut minima molestiae sequi commodi porro inventore consequuntur, obcaecati maiores. Sint?</Card>
-        </Section>
+        </ColumnSection>
       </WavesDiv>
     </>
   );

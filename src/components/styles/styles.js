@@ -24,7 +24,7 @@ export const Subtitle = styled.h2`
   font-family: 'Poppins';
   font-weight: 600;
   font-size: var(--H2);
-  line-height: 3.5rem;
+  line-height: 3rem;
   color: var(--Dark-purple);
   &.platform {
     font-size: var(--H3);
@@ -86,7 +86,7 @@ export const ColorDiv = styled.div`
 export const ColumnSection = styled.section`
   max-width: 1170px;
   margin: ${props=> props.margin ||'4rem auto'};
-  padding: 0;
+  padding: 1rem;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -98,7 +98,8 @@ export const ContentSection = styled.div`
 `
 
 export const SwiperDiv = styled.div`
-  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
   width: 100%;
 `
 
@@ -151,6 +152,7 @@ export const PurpleDivider2 = styled.div`
 
 /* ------ Images and Icons ------ */
 export const LogoVerano = styled.img`
+  margin: ${props => props.margin};
   height: 3rem;
   width: 6.56rem;
 `
@@ -160,21 +162,6 @@ export const Imagem = styled.img`
   max-width: 36rem;
   border-radius: 1rem;
   box-shadow: ${props => props.shadow || '0px 0px 12px rgba(0, 0, 0, 0.35)'};
-`
-
-export const Icon = styled.img`
-  margin: 0 1rem 0 0;
-  width: 2rem;
-  height: 2rem;
-  &.wpp {
-    width: 2.5rem;
-    height: 2.5rem;
-  }
-  &.arrow{
-    margin: auto;
-    width: 3rem;
-    height: 2rem;
-  }
 `
 
 export const UpBackground = styled.img`

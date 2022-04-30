@@ -3,21 +3,36 @@ import styled from "styled-components";
 export const FooterBody = styled.footer`
   margin: 0 auto;
   padding: 1.5rem 0;
-  height: 6rem;
+  min-height: 6rem;
   background: var(--Principal-purple);
-  width: 100%;
   &.orange {
     background: var(--Skin-orange);
   }
 `
 
 export const FooterWrapper = styled.div`
-  max-width: 1440px;
+  max-width: 1170px;
   display: flex;
   justify-content: space-between;
   align-items: center;
   margin: 0 auto;
-  padding: 0 8.5rem;
+  @media(max-width: 800px) {
+    flex-direction: column;
+    padding: 2rem;
+  }
+`
+
+export const Text = styled.p`
+  font-family: DM Sans;
+  font-size: 1.2rem;
+  color: #FFF;
+  text-align: center;
+  strong {
+    color: var(--Highlight-purple);
+  }
+  @media(max-width: 800px) {
+    margin: 2rem auto;
+  }
 `
 
 export const IconDiv = styled.div`
