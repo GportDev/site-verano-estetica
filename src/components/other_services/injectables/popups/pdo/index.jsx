@@ -11,7 +11,7 @@ function Pdo(props) {
       Os fios de PDO são fios absorvíveis pelo organismo e que estimulam o corpo a produzir colágeno. Ou seja, com o passar dos tempos eles naturalmente são absorvidos pelo corpo humano e promovem uma melhora da qualidade e firmeza da pele.
       </PopupText>
       <QaDiv>
-        <Subtitle margin="0 0 2rem">Perguntas frequentes</Subtitle>
+        <Subtitle className="SectionTitle" margin="0 0 2rem">Perguntas frequentes</Subtitle>
       </QaDiv>
     </PopupCard>
   )

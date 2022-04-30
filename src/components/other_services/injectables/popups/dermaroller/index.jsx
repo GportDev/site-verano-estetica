@@ -13,7 +13,7 @@ function Dermarroller(props) {
         O microagulhamento estimula a produção interna de colágeno. Indicado para tratar mãos, rosto, colo e pescoço. Melhorando diversas queixas como rugas, linhas finas, cicatrizes, manchas, entre outros. Utilizamos a caneta DermaPen, procedimento indolor, onde permite tratar todas as áreas de maneira uniforme.
       </PopupText>
       <QaDiv>
-        <Subtitle margin="0 0 2rem">Perguntas frequentes</Subtitle>
+        <Subtitle className="SectionTitle" margin="0 0 2rem">Perguntas frequentes</Subtitle>
         <Accordion data={DermarollerData} />
       </QaDiv>
     </PopupCard>

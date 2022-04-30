@@ -2,11 +2,12 @@ import styled from "styled-components";
 
 export const Popup = styled.div`
   position: fixed;
+  padding: 1rem;
   z-index: 2;
   top: 0;
   left: 0;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   background-color: var(--Dark-purple-backgorund);
   display: flex;
   justify-content: center;
@@ -14,11 +15,9 @@ export const Popup = styled.div`
 `
 
 export const PopupInner = styled.section`
-  position: relative;
-  margin-top: 4rem;
+  margin-top: 2rem;
   padding: 2rem 3rem;
-  width: 100%;
-  max-width: 65rem;
+  max-width: 1170px;
   height: 75%;
   background-color: #f9f9f9;
   border-radius: 1rem;
@@ -28,6 +27,10 @@ export const PopupInner = styled.section`
   overflow-y: scroll;
   ::-webkit-scrollbar{
     display: none;
+  }
+
+  @media(max-width: 800px) {
+    padding: 2rem;
   }
 `
 
@@ -42,6 +45,13 @@ export const PopupText = styled.p`
   text-align: left;
   &.imgList {
     line-height: 2rem;
+  }
+
+  strong {
+    color: var(--Highlight-purple);
+  }
+  @media(max-width: 800px) {
+    text-align: justify;
   }
 `
 
@@ -64,4 +74,7 @@ export const Image = styled.img`
   border-radius: 1rem;
   box-shadow: var(--Shadow);
   margin: 2rem auto;
+  @media(max-width: 400px) {
+    max-width: 100%;
+  }
 `

@@ -6,11 +6,11 @@ import {PopupText, PopupList, PopupItem} from "../../../../pop-up/styles"
 function Drenagem(props) {
   return(
     <PopupCard trigger={props.trigger} setTrigger={props.setTrigger} newClassName="listPopup">
-      <Subtitle margin="0 auto">Drenágem linfática Manual</Subtitle>
-      <PopupText>
+      <Subtitle className="SectionTitle" margin="0 auto">Drenágem linfática Manual</Subtitle>
+      <PopupText marginBottom="2rem">
         Drenagem linfática é uma técnica de massagem manual (DLM) que tem como objetivo estimular o sistema linfático a eliminar o excesso de fluídos do corpo. Apoiada em evidências científicas, a DLM é reconhecida e indicada para auxiliar em vários tratamentos, além de promover relaxamento e bem-estar.
       </PopupText>
-      <Subtitle className="PopupSubtitle">Indicações</Subtitle>
+      <Subtitle className="SectionTitle" margin="0 0 2rem">Indicações</Subtitle>
       <PopupList>
         <PopupItem>Atua nos edemas e linfedemas</PopupItem>
         <PopupItem>Auxilia na qualidade do sono</PopupItem>

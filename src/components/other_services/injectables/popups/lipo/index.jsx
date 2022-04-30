@@ -13,7 +13,7 @@ function Lipo(props) {
         Uma alternativa sem cortes à redução da gordura submentoniana (papada) é o Ácido Deoxicólico. Quando injetado na região, quebra as células de gordura, reduzindo o aspecto da papada.
       </PopupText>
       <QaDiv>
-        <Subtitle margin="0 0 2rem">Perguntas frequentes</Subtitle>
+        <Subtitle className="SectionTitle" margin="0 0 2rem">Perguntas frequentes</Subtitle>
         <Accordion data={LipoData}/>
       </QaDiv>
     </PopupCard>

@@ -13,7 +13,7 @@ function Bioestimulator(props) {
         Tem como principal função dar sustentação à pele, formar colágeno e oferecer uma aparência bem mais jovem e firme, trabalhando, então, as rugas, flacidez e o rejuvenescimento. 
       </PopupText>
       <QaDiv>
-        <Subtitle margin="0 0 2rem">Perguntas frequentes</Subtitle>
+        <Subtitle className="SectionTitle" margin="0 0 2rem">Perguntas frequentes</Subtitle>
         <Accordion data={BioestData}/>
       </QaDiv>
     </PopupCard>

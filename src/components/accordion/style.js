@@ -20,9 +20,14 @@ export const Wrap = styled.div`
   
   transition: transform 0.3s ease;
   cursor: pointer;
-
+  @media(max-width: 800px){
+    padding: 0.75rem;
+  }
   h3 {
     font-size: 1.5rem;
+    @media(max-width: 800px) {
+      font-size: 1.2rem;
+    }
   }
 
   span {

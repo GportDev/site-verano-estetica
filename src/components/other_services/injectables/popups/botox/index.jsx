@@ -15,22 +15,22 @@ function Botox(props) {
       </PopupText>
       <Image src={BotoxImg}/>
       <PopupText className="imgList">
-        1. Testa - Suaviza linhas de expressão e rugas mais superficiais e aparentes.<br/>
-        2. Nariz de coelho - Reduz as rugas no dorso do nariz.<br/>
-        3. Pés de galinha - Suaviza linhas de expressão e rugas mais superficiais e aparentes.<br/>
-        4. Ponta do nariz - Resulta no levantamento da ponta do nariz.<br/>
-        5. Bruxismo - Aplicação do produto nos músculos da mastigação, como masseter e temporal, que vai ajudar a aliviar a tensão da região, amenizando o ranger dos dentes e usado como tratamento para enxaqueca.<br/>
-        6. Sorriso gengival - Aplica-se a toxina para provocar a redução do lábio superior e tornando o sorriso mais estético.<br/>
-        7. Linhas periorais - Suaviza as linhas de expressão ao redor dos lábios.<br/>
-        8. Sorriso invertido - Modifica o formato do sorriso, arqueando as pontas dos lábios.<br/>
-        9. Queixo (mento) - Suaviza as chamadas estrias do queixo.<br/>
-        10. Efeito Nefertiti - Aplica-se o produto na região do pescoço diminuindo os sinais de rugas do pescoço.<br/>
+        <strong>1</strong>. Testa - Suaviza linhas de expressão e rugas mais superficiais e aparentes.<br/>
+        <strong>2</strong>. Nariz de coelho - Reduz as rugas no dorso do nariz.<br/>
+        <strong>3</strong>. Pés de galinha - Suaviza linhas de expressão e rugas mais superficiais e aparentes.<br/>
+        <strong>4</strong>. Ponta do nariz - Resulta no levantamento da ponta do nariz.<br/>
+        <strong>5</strong>. Bruxismo - Aplicação do produto nos músculos da mastigação, como masseter e temporal, que vai ajudar a aliviar a tensão da região, amenizando o ranger dos dentes e usado como tratamento para enxaqueca.<br/>
+        <strong>6</strong>. Sorriso gengival - Aplica-se a toxina para provocar a redução do lábio superior e tornando o sorriso mais estético.<br/>
+        <strong>7</strong>. Linhas periorais - Suaviza as linhas de expressão ao redor dos lábios.<br/>
+        <strong>8</strong>. Sorriso invertido - Modifica o formato do sorriso, arqueando as pontas dos lábios.<br/>
+        <strong>9</strong>. Queixo (mento) - Suaviza as chamadas estrias do queixo.<br/>
+        <strong>10</strong>. Efeito Nefertiti - Aplica-se o produto na região do pescoço diminuindo os sinais de rugas do pescoço.<br/>
       </PopupText>
       <PopupText marginBottom="2rem">
         Além destas regiões, é possível tratar diversas queixas como sorriso gengival, enxaqueca, suor excessivo, bruxismo, entre outras questões funcionais
       </PopupText>
       <QaDiv>
-        <Subtitle margin="0 0 2rem">Perguntas frequentes</Subtitle>
+        <Subtitle className="SectionTitle" margin="0 0 2rem">Perguntas frequentes</Subtitle>
         <Accordion data={BotoxData} />
       </QaDiv>
     </PopupCard>

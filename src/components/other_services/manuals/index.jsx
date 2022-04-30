@@ -14,19 +14,18 @@ function Manuals() {
 
   return(
     <Section margin="6rem auto" >
+      <ContentSection>
+        <Subtitle margin="0 0 2rem">Procedimentos Manuais</Subtitle>
+        <Text>
+          Os procedimentos manuais são técnicas de terapia corporal feitos pela nossa fisioterapeuta, todos eles tem o objetivo de melhorar a estética e aumentar seu bem estar.
+        </Text>
+      </ContentSection>
       <ProceduresTable>
         <TableLink onClick={setDrenagemPopup}><Procedure>Drenagem linfática manual</Procedure></TableLink>
         <TableLink onClick={setFisioPopup}><Procedure>Fisioterapia Pélvica</Procedure></TableLink>
         <TableLink onClick={setMassagemPopup}><Procedure>Massagem</Procedure></TableLink>
         <TableLink onClick={setPeelingPopup}><Procedure>Peeling</Procedure></TableLink>
       </ProceduresTable>
-      <ContentSection>
-        <Subtitle>Procedimentos Manuais</Subtitle>
-        <Text>
-          Os procedimentos manuais são técnicas de terapia corporal feitos pela nossa fisioterapeuta, todos eles tem o objetivo de melhorar a estética e aumentar seu bem estar.<br/><br/>
-          Nossos procedimentos estão listados na tabela ao lado.
-        </Text>
-      </ContentSection>
       <Drenagem trigger={drenagemPopup} setTrigger={setDrenagemPopup}/>
       <Fisioterapia trigger={fisioPopup} setTrigger={setFisioPopup}/>
       <Massagem trigger={massagemPopup} setTrigger={setMassagemPopup}/>

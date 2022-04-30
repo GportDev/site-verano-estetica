@@ -185,3 +185,18 @@ export const LipoData = [
     answer: "Existem algumas restrições para realização das aplicações. Por isso é sempre importante que você realize uma avaliação com o nosso profissional. Gestantes; Lactantes; insuficiência hepática, procedimento cirúrgico na região, distúrbios da tireóide, alto grau de flacidez, entre outros são contraindicações ao tratamento."
   }
 ]
+
+export const PeelingData = [
+  {
+    question: "Qual o benefício do Peeling?" ,
+    answer: "É um tratamento para remoção da camada mais superficial da pele, promovendo uma para renovação celular, deixando imediatamente a pele mais macia ao toque, e com brilho renovado."
+  },
+  {
+    question: "Para qual tipo de tratamento o Peeling é recomendado?" ,
+    answer: "O peeling pode ser realizado em todo tipo de pele, em qualquer estação do ano. Indicado para melhorar a qualidade da pele, reduzindo oleosidade, renovando o brilho e amenizando manchas."
+  },
+  {
+    question: "Quais são as contraindicações do Peeling?" ,
+    answer: "Há algumas restrições para realização do peeling como por exemplo: pele recentemente bronzeada, gestante, lactante, hepatites, HIV, doenças autoimune, herpes ativa, dermatite, entre outros."
+  }
+]

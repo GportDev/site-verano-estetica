@@ -24,8 +24,7 @@ function Injectables() {
       <ContentSection>
         <Subtitle margin="0 0 2rem">Estética com injetáveis</Subtitle>
         <Text>
-          Os procedimentos injetáveis são técnicas de estética avançada, pensados para tratar a face através da injeção de fluidos. São os procedimentos mais procurados em países como China e Estados unidos.<br/><br/>
-          Nossos procedimentos estão listados na tabela ao lado.
+          Os procedimentos injetáveis são técnicas de estética avançada, pensados para tratar a face através da injeção de fluidos. São os procedimentos mais procurados em países como China e Estados unidos.
         </Text>
       </ContentSection>
       <ProceduresTable>

@@ -14,7 +14,7 @@ function Skinbooster(props) {
         O Skinbooster é uma hidratação injetável que trata profundamente a pele através do ácido hialurônico e diversas vitaminas que possui na sua composição. Eles trazem um resultado muito superior aos cremes noturnos, que atuam somente na camada mais superficial. Pode ser utilizado no tratamento de linhas finas, rejuvenescimento da pele, entre outros.
       </PopupText>
       <QaDiv>
-        <Subtitle margin="0 0 2rem">Perguntas frequentes</Subtitle>
+        <Subtitle className="SectionTitle" margin="0 0 2rem">Perguntas frequentes</Subtitle>
         <Accordion data={SkinboosterData}/>
       </QaDiv>
     </PopupCard>

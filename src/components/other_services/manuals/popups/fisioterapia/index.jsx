@@ -6,11 +6,11 @@ import {PopupText, PopupItem, PopupList} from "../../../../pop-up/styles"
 function Fisioterapia(props) {
   return(
     <PopupCard trigger={props.trigger} setTrigger={props.setTrigger} newClassName="listPopup">
-      <Subtitle margin="0 auto">Fisioterapia pélvica</Subtitle>
-      <PopupText>
+      <Subtitle className="SectionTitle" margin="0 auto">Fisioterapia pélvica</Subtitle>
+      <PopupText marginBottom="2rem">
         Reabilitação das disfunções do assoalho pélvico, que é o conjunto de músculos e ligamentos que sustentam órgãos como bexiga, útero, intestino e tudo que fica na região baixa do abdômen.
       </PopupText>
-      <Subtitle className="PopupSubtitle">Indicações</Subtitle>
+      <Subtitle className="SectionTitle" margin="0 0 2rem">Indicações</Subtitle>
       <PopupList>
         <PopupItem>Tratamento de diástase</PopupItem>
         <PopupItem>Tratamento de incontinência urinária</PopupItem>

@@ -31,6 +31,12 @@ export const Subtitle = styled.h2`
     line-height: 2rem;
     font-weight: 600;
   }
+  @media(max-width: 800px) {
+    &.SectionTitle {
+      font-size: var(--H3);
+      line-height: 2.5rem;
+    }
+  }
 `
 
 export const Text = styled.p`
