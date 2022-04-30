@@ -1,19 +1,19 @@
 import Header from "../../../../components/header/index"
-import OrangeDiv from "../../../../components/orange_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { Container, ContentSection } from "../../../../components/styles/styles";
-import { ResultImg, TanButtonFilled, TanDiv, TanH3, TanList, TanListLine, TanSection, TanSubtitle, TanText} from "../../styles"
+import { ResultImg, TanButtonFilled, TanDiv, TanH3, TanSection, TanSubtitle, TanText} from "../../styles"
 import Resultado1 from "../../../../assets/images/bronze/bronze-nat-resultado1.jpg"
 import Resultado2 from "../../../../assets/images/bronze/bronze-nat-resultado2.jpg"
 import Intro from "../../../../assets/images/bronze/bronze-nat-clip-intro.jpg"
+import WavesDiv from "../../../../components/waves_div";
 
 function Cold() {
   return(
     <>
       <Header orange/>
       <Container>
-        <OrangeDiv>
+        <WavesDiv orange>
           <TanSection>
             <ContentSection>
               <TanSubtitle className="SectionTitle" margin="0 auto 2rem">Sem sol, também tem bronze</TanSubtitle>
@@ -41,7 +41,7 @@ function Cold() {
             </TanText>
             <TanButtonFilled fontSize="1.5rem">Agende agora sua sessão</TanButtonFilled>
           </TanSection>
-        </OrangeDiv>
+        </WavesDiv>
         <TanSection className="images">
           <TanSubtitle margin="0 auto 2rem" className="SectionTitle">Resultados</TanSubtitle>
           <TanDiv>

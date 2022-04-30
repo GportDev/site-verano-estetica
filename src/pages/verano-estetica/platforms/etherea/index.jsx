@@ -1,17 +1,17 @@
 import Header from "../../../../components/header/index"
-import PurpleDiv from "../../../../components/purple_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { ButtonFilled, Container, ContentSection, Subtitle, Text  } from "../../../../components/styles/styles";
 import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Picture } from "../../styles";
 import EthereaPic from "../../../../assets/images/Etherea/Etherea.png"
+import WavesDiv from "../../../../components/waves_div";
 
 function Etherea() {
   return(
     <>
       <Header/>
       <Container>
-        <PurpleDiv>
+        <WavesDiv>
           <PlatSection>
             <ContentSection>
               <Subtitle>Etherea MX</Subtitle>
@@ -74,7 +74,7 @@ function Etherea() {
             </Text>
             <ButtonFilled  fontSize="1.25rem">Agende agora sua sessão</ButtonFilled>
           </PlatSection>
-        </PurpleDiv>
+        </WavesDiv>
         <PlatSection className="content">
           <Subtitle margin="0 auto 2rem">Antes e depois</Subtitle>
           <Container  className="image">

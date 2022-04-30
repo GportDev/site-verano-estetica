@@ -1,5 +1,4 @@
 import Header from "../../../../components/header/index"
-import OrangeDiv from "../../../../components/orange_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { Container, ContentSection } from "../../../../components/styles/styles";
@@ -7,13 +6,14 @@ import { ResultImg, TanButtonFilled, TanDiv, TanH3, TanList, TanListLine, TanSec
 import Resultado1 from "../../../../assets/images/bronze/bronze-nat-resultado1.jpg"
 import Resultado2 from "../../../../assets/images/bronze/bronze-nat-resultado2.jpg"
 import Intro from "../../../../assets/images/bronze/bronze-nat-clip-intro.jpg"
+import WavesDiv from "../../../../components/waves_div";
 
 function Natural() {
   return(
     <>
       <Header orange/>
       <Container>
-        <OrangeDiv>
+        <WavesDiv orange>
           <TanSection margin="4rem auto 8rem">
             <ContentSection>
               <TanSubtitle className="SectionTitle" margin="0 auto 2rem">Se tem sol, tem bronze</TanSubtitle>
@@ -47,7 +47,7 @@ function Natural() {
             </TanList>
             <TanButtonFilled fontSize="1.5rem">Agende agora sua sessão</TanButtonFilled>
           </TanSection>
-        </OrangeDiv>
+        </WavesDiv>
         <TanSection className="images" margin="4rem auto 8rem">
           <TanSubtitle margin="0 auto 2rem" className="SectionTitle">Resultados</TanSubtitle>
           <TanDiv>

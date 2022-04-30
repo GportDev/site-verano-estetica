@@ -1,5 +1,4 @@
-import Header from "../../../../components/header/index"
-import PurpleDiv from "../../../../components/purple_div";
+import Header from "../../../../components/header/index";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { ButtonFilled, Container, ContentSection, Subtitle, Text  } from "../../../../components/styles/styles";
@@ -7,13 +6,14 @@ import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Pic
 import UltraformerIII from "../../../../assets/images/Ultraformer/ULTRAFORMER3 1.png"
 import Papada from "../../../../assets/images/Ultraformer/papada.jpeg"
 import Tratamento from "../../../../assets/images/Ultraformer/equipamento.jpeg"
+import WavesDiv from "../../../../components/waves_div";
 
 function Ultraformer() {
   return(
     <>
       <Header/>
       <Container>
-        <PurpleDiv>
+        <WavesDiv>
           <PlatSection>
             <ContentSection>
               <Subtitle>Ultraformer III</Subtitle>
@@ -55,7 +55,7 @@ function Ultraformer() {
             </UltraList>
             <ButtonFilled  fontSize="1.25rem">Agende agora sua sessão</ButtonFilled>
           </PlatSection>
-        </PurpleDiv>
+        </WavesDiv>
         <PlatSection className="content">
           <Subtitle margin="0 auto 2rem">Antes e depois</Subtitle>
           <Container  className="image">

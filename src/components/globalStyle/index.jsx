@@ -31,7 +31,7 @@ export const GlobalStyle = createGlobalStyle`
   --Text-to-image: 4rem; /* 64px */
   --Subtitle-to-text: 1.5rem; /* 24px */
   --To-button: 4rem; 
-  --Page-margin: 8.45rem; /* 135px */
+  --Page-padding: 1rem; /* 135px */
   
   /* TYPOGRAPHY */
   --H1: 2.5rem;

@@ -11,6 +11,7 @@ import Ultraformer from "../pages/verano-estetica/platforms/ultraformer/index.js
 import Natural from "../pages/verano-bronze/tretments/natural/index.jsx"
 import Cold from "../pages/verano-bronze/tretments/cold/index.jsx"
 import Moon from "../pages/verano-bronze/tretments/moon/index.jsx"
+import SmallScreenMenu from "../components/menu/index.jsx"
 
 
 function MyRouter() {
@@ -20,11 +21,13 @@ function MyRouter() {
         <Routes>
           <Route path="/" element={<HomePage/>}/>
           <Route path="/verano-estetica" element={<VeranoEstetica />}/>
+          <Route path="/verano-estetica/mobile-menu" element={< SmallScreenMenu />}/>
           <Route path="/verano-estetica/soprano" element={<Soprano />}/>
           <Route path="/verano-estetica/etherea" element={<Etherea />}/>
           <Route path="/verano-estetica/inkie" element={<Inkie />}/>
           <Route path="/verano-estetica/ultraformer" element={<Ultraformer />}/>
           <Route path="/verano-bronze" element={<VeranoBronze />}/>
+          <Route path="/verano-bronze/mobile-menu" element={<SmallScreenMenu orange/>}/>
           <Route path="/verano-bronze/bronzeamento-gelado" element={<Cold />}/>
           <Route path="/verano-bronze/bronzeamento-natural" element={<Natural />}/>
           <Route path="/verano-bronze/banho-de-lua" element={<Moon />}/>

@@ -10,20 +10,22 @@ export const Title = styled.h1`
   font-size: var(--H1);
   line-height: 3.5rem;
   color: var(--Dark-purple);
+  @media(max-width: 800px) {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin: 1rem 0;
+  }
 `
 
 export const Subtitle = styled.h2`
   position: ${props => props.position};
   margin: ${props => props.margin};
+  text-align: center;
   font-family: 'Poppins';
   font-weight: 600;
-  font-style: bold;
   font-size: var(--H2);
   line-height: 3.5rem;
   color: var(--Dark-purple);
-  &.SectionTitle {
-    font-size: 2.5rem;
-  }
   &.platform {
     line-height: 2rem;
     font-weight: 600;
@@ -38,13 +40,13 @@ export const Text = styled.p`
   margin: ${props => props.margin};
   color: ${props => props.color || 'var(--Text)' };
   text-align: ${props => props.align || 'center' };
+
   strong {
     color: var(--Highlight-purple);
   }
 `
 
 export const Container = styled.div`
-  width: 100vw;
   margin: 0 auto;
   &.image {
     display: flex;
@@ -57,33 +59,34 @@ export const Container = styled.div`
 `
 
 export const Section = styled.section`
-  width: 100vw;
-  max-width: 1440px;
+  max-width: 1170px;
   margin: ${props=> props.margin ||'4rem auto'};
-  padding: 0 var(--Page-margin);
+  padding: 0 var(--Page-padding);
   display: flex;
   justify-content: space-between;
   align-items: center;
+
+  @media(max-width: 800px) {
+    flex-direction: column;
+  }
 `
 
 export const ColorDiv = styled.div`
   position: relative;
-  padding: 3rem;
-  width: 100vw;
+  padding: 1rem;
 `
 
 export const ColumnSection = styled.section`
-  width: 100vw;
-  max-width: 1440px;
+  max-width: 1170px;
   margin: ${props=> props.margin ||'4rem auto'};
-  padding: 0 var(--Page-margin);
+  padding: 0 var(--Page-padding);
   display: flex;
   flex-direction: column;
   align-items: center;
 `
   
 export const ContentSection = styled.div`
-  max-width: 32rem;
+  max-width: 36rem;
   text-align: center;
 `
 
@@ -149,10 +152,8 @@ export const PurpleDivider2 = styled.div`
 
 /* ------ Images and Icons ------ */
 export const LogoVerano = styled.img`
-  width: ${props => props.width};
-  height: ${props => props.height};
-  margin-top: ${props => props.marginTop};
-  margin-left: ${props => props.marginLeft || 0};
+  height: 3rem;
+  width: 6.56rem;
 `
   
 export const Imagem = styled.img`
@@ -186,7 +187,11 @@ export const UpBackground = styled.img`
   max-width: fit-content;
   width: 46rem;
   overflow: hidden;
+  @media(max-width: 800px) {
+    width: 90%;
+  }
 `
+
 export const DownBackground = styled.img`
   position: absolute;
   opacity: 60%;
@@ -196,7 +201,11 @@ export const DownBackground = styled.img`
   max-width: fit-content;
   width: 46rem;
   overflow: hidden;
+  @media(max-width: 800px) {
+    width: 90%;
+  }
 `
+
 
 
 /* ------ Buttons ------ */
@@ -216,21 +225,29 @@ export const ButtonOutlined = styled.a`
 
 export const ButtonFilled = styled.a`
   text-decoration: none;
-  color: ${props => props.color || 'black'};
-  font-size: ${props => props.fontSize};
+  font-size: 1.25rem;
+
   margin: 0 auto;
-  background: var(--Principal-purple);
-  color: white;
   padding: 0.75rem 1.25rem;
   max-width: fit-content;
+
+  background: var(--Principal-purple);
+  color: white;
   border: 2px solid var(--Principal-purple);
   border-radius: 0.5rem;
+  box-shadow: 2px 2px 6px rgba(0, 0, 0, 0.35);
+
   display: flex;
   align-items: center;
   justify-content: center;
+
   &.platform {
-    position: absolute;
-    bottom: 3rem;
-    right: 4.9rem;
+    align-self: flex-end;
+    margin: 0 auto
   }
 `
+/*
+position: absolute;
+bottom: 3rem;
+right: 4.9rem;
+*/

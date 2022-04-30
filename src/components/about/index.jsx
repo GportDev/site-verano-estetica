@@ -1,12 +1,11 @@
 import { ContentSection, Section, Card, Subtitle, Text } from "../styles/styles"
 import { TanSubtitle, TanText } from "../../pages/verano-bronze/styles"
-import OrangeDiv from "../orange_div";
-import PurpleDiv from "../purple_div";
+import WavesDiv from "../waves_div";
 
 function About(props) {
   return (props.orange) ? (
     <>
-      <OrangeDiv>
+      <WavesDiv orange>
         <Section>
           <ContentSection>
             <TanSubtitle className="SectionTitle">Sobre nós</TanSubtitle>
@@ -24,11 +23,11 @@ function About(props) {
           </ContentSection>
           <Card>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit fugiat voluptate vel eaque. Voluptate similique repudiandae cum aut ut minima molestiae sequi commodi porro inventore consequuntur, obcaecati maiores. Sint?</Card>
         </Section>
-      </OrangeDiv>
+      </WavesDiv>
     </>
   ) : (
     <>
-      <PurpleDiv>
+      <WavesDiv>
         <Section>
           <ContentSection>
             <Subtitle className="SectionTitle">Sobre nós</Subtitle>
@@ -43,7 +42,7 @@ function About(props) {
           </ContentSection>
           <Card>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora odit fugiat voluptate vel eaque. Voluptate similique repudiandae cum aut ut minima molestiae sequi commodi porro inventore consequuntur, obcaecati maiores. Sint?</Card>
         </Section>
-      </PurpleDiv>
+      </WavesDiv>
     </>
   );
 }

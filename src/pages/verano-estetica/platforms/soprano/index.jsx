@@ -1,5 +1,4 @@
 import Header from "../../../../components/header/index"
-import PurpleDiv from "../../../../components/purple_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { ButtonFilled, Container, ContentSection, Subtitle, Text  } from "../../../../components/styles/styles";
@@ -7,13 +6,14 @@ import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, Video } fro
 
 import SopranoIce from "../../../../assets/images/Soprano/soprano.png"
 import SopranoVideo from "../../../../assets/videos/soprano/soprano.mp4"
+import WavesDiv from "../../../../components/waves_div";
 
 function Soprano() {
   return(
     <>
       <Header/>
       <Container>
-        <PurpleDiv>
+        <WavesDiv>
           <PlatSection>
             <ContentSection>
               <Subtitle>Soprano Ice laser de diodo</Subtitle>
@@ -50,7 +50,7 @@ function Soprano() {
             </Text>
             <ButtonFilled fontSize="1.5rem">Agende agora sua sessão</ButtonFilled>
           </PlatSection>
-        </PurpleDiv>
+        </WavesDiv>
         <PlatSection className="content">
           <Subtitle margin="0 auto 2rem">Funcionamento do aparelho</Subtitle>
           <Video src={SopranoVideo} controls/>

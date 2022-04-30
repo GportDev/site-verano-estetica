@@ -1,5 +1,5 @@
-import { ColumnSection, SwiperDiv, Text, Card, Subtitle, ButtonFilled} from "../styles/styles";
-import { MachineAvatar, NameTitle} from "./styles";
+import { ColumnSection, SwiperDiv, Card, Subtitle, ButtonFilled} from "../styles/styles";
+import { MachineAvatar, NameTitle, Text} from "./styles";
 import Soprano from "../../assets/images/Soprano/Soprano-cut.png";
 import Etherea from "../../assets/images/Etherea/Etherea.png";
 import Ultraformer from "../../assets/images/Ultraformer/ultraformer-cut.png";
@@ -13,10 +13,11 @@ import 'swiper/css/bundle';
 function AestheticsServices() {
   return(
     <ColumnSection margin="4rem auto 8rem">
-      <Subtitle className="SectionTitle">Serviços e plataformas</Subtitle>
-      <Text margin='4rem'>Com mais de 2 anos no mercado de estética, a Verano conquistou seus clientes com opções de tratamento exclusivas, sempre se preocupando com a saúde e bem estar do paciente.
+      <Subtitle margin="0 auto">Serviços e plataformas</Subtitle>
+      <Text>Com mais de 2 anos no mercado de estética, a Verano conquistou seus clientes com opções de tratamento exclusivas, sempre se preocupando com a saúde e bem estar do paciente.
       Dentre esses serviços temos:
       </Text>
+
       <SwiperDiv>
         <Swiper
           modules={[Navigation, EffectCards]}

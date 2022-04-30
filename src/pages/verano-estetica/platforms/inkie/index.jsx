@@ -1,5 +1,4 @@
 import Header from "../../../../components/header/index"
-import PurpleDiv from "../../../../components/purple_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { ButtonFilled, Container, ContentSection, Subtitle, Text  } from "../../../../components/styles/styles";
@@ -7,6 +6,7 @@ import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Pic
 import InkiePic from "../../../../assets/images/ND_YAG/Inkie.png"
 import Tratamento1 from "../../../../assets/images/ND_YAG/tatoo.jpeg"
 import Tratamento2 from "../../../../assets/images/ND_YAG/sobrancelha.jpeg"
+import WavesDiv from "../../../../components/waves_div";
 
 
 function Inkie() {
@@ -14,7 +14,7 @@ function Inkie() {
     <>
       <Header/>
       <Container>
-        <PurpleDiv>
+        <WavesDiv>
           <PlatSection>
             <ContentSection>
               <Subtitle>Inkie ND YAG Q Switched</Subtitle>
@@ -51,7 +51,7 @@ function Inkie() {
             </Text>
             <ButtonFilled  fontSize="1.25rem">Agende agora sua sessão</ButtonFilled>
           </PlatSection>
-        </PurpleDiv>
+        </WavesDiv>
         <PlatSection className="content">
           <Subtitle margin="0 auto 2rem">Antes e depois</Subtitle>
           <Container  className="image">

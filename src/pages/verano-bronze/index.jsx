@@ -1,7 +1,7 @@
 import React from "react";
 import Header from "../../components/header/index.jsx";
 import TanIntro from "../../components/intro_bronze";
-import OrangeDiv from "../../components/orange_div/index.jsx";
+import WavesDiv from "../../components/waves_div/index.jsx";
 import About from "../../components/about/index.jsx";
 import Contact from "../../components/contact/index.jsx";
 import Footer from "../../components/footer/index.jsx";
@@ -18,9 +18,9 @@ function VeranoBronze() {
         <TanIntro />
       </Container>
       <OrangeDivider1 />
-      <OrangeDiv id="Tretments">
+      <WavesDiv orange id="Tretments">
         <Tretments />
-      </OrangeDiv>
+      </WavesDiv>
       <OrangeDivider2 />
       <Container id="Results">
         <Testimonials orange/>

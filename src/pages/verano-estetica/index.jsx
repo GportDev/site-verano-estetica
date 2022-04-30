@@ -1,7 +1,7 @@
 import React from "react"
-import PurpleDiv from "../../components/purple_div/index.jsx";
+import WavesDiv from "../../components/waves_div/index.jsx";
 import Header from "../../components/header/index.jsx";
-import EsteticIntro from "../../components/intro_verano/index.jsx";
+import EsteticIntro from "./intro_verano/index.jsx";
 import AestheticsServices from "../../components/services/index.jsx";
 import Testimonials from "../../components/testimonials/index.jsx";
 import About from "../../components/about/index.jsx";
@@ -16,11 +16,9 @@ function VeranoEstetica() {
   return (
     <>
       <Header />
-      <Container id="Home">
-        <EsteticIntro />
-      </Container>
+      <EsteticIntro />
       <PurpleDivider1 />
-      <PurpleDiv id="Platforms">
+      <WavesDiv id="Platforms">
         <AestheticsServices />
         <Container id="Procedures">
           <Injectables />
@@ -28,7 +26,7 @@ function VeranoEstetica() {
         <Container>
           <Manuals />
         </Container>
-      </PurpleDiv>
+      </WavesDiv>
       <PurpleDivider2 />
       <Container id="Testimonials">
         <Testimonials />

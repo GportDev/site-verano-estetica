@@ -1,5 +1,4 @@
 import Header from "../../../../components/header/index"
-import OrangeDiv from "../../../../components/orange_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { Container, ContentSection } from "../../../../components/styles/styles";
@@ -8,13 +7,14 @@ import Intro from "../../../../assets/images/bronze/banho_de_lua/abdomen.jpeg"
 import Pernas from "../../../../assets/images/bronze/banho_de_lua/pernas.jpeg"
 import Resultado1 from "../../../../assets/images/bronze/banho_de_lua/antebraço.jpeg"
 import Resultado2 from "../../../../assets/images/bronze/banho_de_lua/braço1.jpeg"
+import WavesDiv from "../../../../components/waves_div";
 
 function Moon() {
   return(
     <>
       <Header orange/>
       <Container>
-        <OrangeDiv>
+        <WavesDiv orange>
           <TanSection>
             <ContentSection>
               <TanSubtitle className="SectionTitle" margin="0 auto 8rem">Banho de lua</TanSubtitle>
@@ -50,7 +50,7 @@ function Moon() {
               <ResultImg src={Pernas} className="intro"/>
             </TanDiv>
           </TanSection>
-        </OrangeDiv>
+        </WavesDiv>
         <TanSection className="images" margin="4rem auto 8rem">
           <TanSubtitle margin="0 auto 2rem" className="SectionTitle">Resultados</TanSubtitle>
           <TanDiv>
