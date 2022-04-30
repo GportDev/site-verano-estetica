@@ -16,7 +16,7 @@ export const Container = styled.div`
 
 export const Imagem = styled.img`
   margin: 0 auto;
-  max-width: 80%;
+  max-width: 32rem;
   border-radius: 1rem;
   box-shadow: ${props => props.shadow || '0px 0px 12px rgba(0, 0, 0, 0.35)'};
   @media(max-width: 800px) {
@@ -40,7 +40,7 @@ export const Card = styled.section`
   box-shadow: 0px 0px 12px rgba(0, 0, 0, 0.35);
   border-radius: 1rem;
   text-align: center;
-  max-width: 65%;
+  max-width: 28rem;
   @media(max-width: 800px) {
     max-width: 85%;
     margin: 1rem auto 6rem;

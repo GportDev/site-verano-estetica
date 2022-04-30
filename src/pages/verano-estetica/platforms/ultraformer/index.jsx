@@ -1,8 +1,8 @@
 import Header from "../../../../components/header/index";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
-import { ButtonFilled, Container, ContentSection, Subtitle, Text  } from "../../../../components/styles/styles";
-import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Picture, UltraList } from "../../styles";
+import { ButtonFilled, ContentSection, Subtitle, Text, Title  } from "../../../../components/styles/styles";
+import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Picture, UltraList, Container, ImageContainer } from "../../styles";
 import UltraformerIII from "../../../../assets/images/Ultraformer/ULTRAFORMER3 1.png"
 import Papada from "../../../../assets/images/Ultraformer/papada.jpeg"
 import Tratamento from "../../../../assets/images/Ultraformer/equipamento.jpeg"
@@ -12,20 +12,22 @@ function Ultraformer() {
   return(
     <>
       <Header/>
-      <Container>
         <WavesDiv>
-          <PlatSection>
-            <ContentSection>
-              <Subtitle>Ultraformer III</Subtitle>
-              <BenefitsList>
-                <ListLine><strong>Tira flacidez</strong></ListLine>
-                <ListLine><strong>Efeito lifting</strong> imediato</ListLine>
-                <ListLine>Efeito <strong>lipo sem cirurgia</strong></ListLine>
-                <ListLine>Melhora a espessura da pele na hora</ListLine>
-              </BenefitsList>
-            </ContentSection>
-              <Equipment src={UltraformerIII} className="ultraformer"/>
+          <PlatSection className="content">
+              <Title>Ultraformer III</Title>
+            <Container>
+              <ContentSection>
+                <BenefitsList>
+                  <ListLine><strong>Tira flacidez</strong></ListLine>
+                  <ListLine><strong>Efeito lifting</strong> imediato</ListLine>
+                  <ListLine>Efeito <strong>lipo sem cirurgia</strong></ListLine>
+                  <ListLine>Melhora a espessura da pele na hora</ListLine>
+                </BenefitsList>
+              </ContentSection>
+                <Equipment src={UltraformerIII} className="ultraformer"/>
+            </Container>
           </PlatSection>
+          
           <PlatSection className="content ultroformer">
             <ThirdTitle className="first">O que é?</ThirdTitle>
             <Text align="left">
@@ -58,7 +60,7 @@ function Ultraformer() {
         </WavesDiv>
         <PlatSection className="content">
           <Subtitle margin="0 auto 2rem">Antes e depois</Subtitle>
-          <Container  className="image">
+          <ImageContainer>
             <ImgDiv>
               <Picture src={Papada}/>
               <Text margin="1rem 0">Redução da papada</Text>
@@ -67,11 +69,10 @@ function Ultraformer() {
               <Picture src={Tratamento}/>
               <Text margin="1rem 0">Rejuvenescimento</Text>
             </ImgDiv>
-          </Container>
+          </ImageContainer>
         </PlatSection>
         <Contact />
         <Footer />
-      </Container>
     </>
   )
 }

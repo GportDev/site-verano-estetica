@@ -11,8 +11,8 @@ function Footer(props) {
         <LogoVerano src={Logo}/>
         <Text fontSize="1rem">2022 Verano Estética | Todos os direitos reservados<br/>Developed bt PortDev</Text>
         <IconDiv>
-          <a href="#"><Icon src={Facebook}/></a>
-          <a href="#"><Icon src={Instagram}/></a>
+          <a href="https://web.facebook.com/verano.lasersjc" target="blanck"><Icon src={Facebook}/></a>
+          <a href="https://www.instagram.com/verano.lasersjc/" target="blanck"><Icon src={Instagram}/></a>
         </IconDiv>
       </FooterWrapper>
     </FooterBody>
@@ -22,8 +22,8 @@ function Footer(props) {
         <LogoVerano src={Logo} />
         <Text fontSize="1rem">2022 Verano Estética | Todos os direitos reservados<br/>Developed bt PortDev</Text>
         <IconDiv>
-          <a href="#"><Icon src={Facebook}/></a>
-          <a href="#"><Icon src={Instagram}/></a>
+          <a href="https://web.facebook.com/verano.lasersjc" target="blanck"><Icon src={Facebook}/></a>
+          <a href="https://www.instagram.com/verano.lasersjc/" target="blanck"><Icon src={Instagram}/></a>
         </IconDiv>
       </FooterWrapper>
     </FooterBody>

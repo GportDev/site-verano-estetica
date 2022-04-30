@@ -55,14 +55,6 @@ export const Text = styled.p`
 
 export const Container = styled.div`
   margin: 0 auto;
-  &.image {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 100%;
-    margin: 0;
-    padding: 0;
-  }
 `
 
 export const Section = styled.section`

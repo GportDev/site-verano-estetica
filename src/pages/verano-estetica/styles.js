@@ -1,16 +1,29 @@
 import styled from "styled-components";
 
 export const PlatSection = styled.section`
-  width: 100vw;
-  max-width: 1440px;
+  max-width: 1170px;
   margin: 4rem auto;
-  padding: 0 var(--Page-margin);
+  padding: 0 2rem;
   display: flex;
-  justify-content: space-between;
   align-items: center;
   &.content {
     flex-direction: column;
   }
+`
+export const Container = styled.div`
+  display: flex;
+  justify-content: space-between;
+  @media(max-width: 800px) {
+    flex-direction: column;
+  }
+`
+export const ImageContainer = styled.div`
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  margin: 0;
+  padding: 0;
 `
 
 export const BenefitsList = styled.ul`
@@ -73,7 +86,7 @@ export const ThirdTitle = styled.h3`
   }
 `
 export const Video = styled.video`
-  width: 60rem;
+  max-width: 100%;
   border-radius: 1rem;
   box-shadow: var(--Shadow);
 `

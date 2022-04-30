@@ -12,7 +12,7 @@ function Contact(props) {
         <TanText margin="2rem 0 4rem" fontSize="1.35rem">
           Entre em contato com a <strong>Verano</strong>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
         </TanText>
-        <TanButtonFilled fontSize="1.25rem">
+        <TanButtonFilled href="https://wa.me/5512981942768" target="blank" fontSize="1.25rem">
           <Whatsapp/>
           Entrar em contato
         </TanButtonFilled>
@@ -52,7 +52,7 @@ function Contact(props) {
         <Text margin="2rem 0 4rem" fontSize="1.35rem">
           Entre em contato com a <strong>Verano</strong>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
         </Text>
-        <ButtonFilled fontSize="1.25rem">
+        <ButtonFilled href="https://wa.me/5512981942768" target="blank" fontSize="1.25rem">
           <Whatsapp/>
           Entrar em contato
         </ButtonFilled>

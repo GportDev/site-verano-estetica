@@ -48,6 +48,7 @@ function Testimonials(props) {
           Resultados e relatos dos nossos amados clientes
         </Subtitle>
           <SwiperDiv>
+
               <Container>
                 <Imagem src={Alanna}/>
                 <Card>
@@ -78,6 +79,7 @@ function Testimonials(props) {
                   </Avatar>
                 </Card>
               </Container>
+              
           </SwiperDiv>
       </TestimonialSection>
     </>
