@@ -7,6 +7,9 @@ export const TestimonialSection = styled.section`
   flex-direction: column;
   justify-content: space-between;
   margin: var(--Text-to-image) auto;
+  &.taning {
+    flex-direction: row;
+  }
 `
 export const Container = styled.div`
   display: flex;

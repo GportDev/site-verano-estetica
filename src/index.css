@@ -27,3 +27,8 @@ body {
   color: var(--Principal-purple);
 }
 
+#orange > .swiper-button-next, .swiper-button-prev {
+  margin: 0 -0.75rem;
+  color: var(--Strong-orange);
+}
+

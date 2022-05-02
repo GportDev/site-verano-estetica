@@ -29,7 +29,6 @@ export const Subtitle = styled.h2`
   &.platform {
     font-size: var(--H3);
     line-height: 2rem;
-    font-weight: 600;
   }
   @media(max-width: 800px) {
     &.SectionTitle {
@@ -41,10 +40,10 @@ export const Subtitle = styled.h2`
 
 export const Text = styled.p`
   position: ${props => props.position};
+  margin: ${props => props.margin};
   display: inline-block;
   font-family: DM Sans;
-  font-size: ${props => props.fontSize || '1.20rem'};
-  margin: ${props => props.margin};
+  font-size: ${props => props.fontSize || 'var(--P)'};
   color: ${props => props.color || 'var(--Text)' };
   text-align: ${props => props.align || 'center' };
 
@@ -53,6 +52,8 @@ export const Text = styled.p`
   }
 `
 
+
+/* ------ Containers ------ */
 export const Container = styled.div`
   margin: 0 auto;
 `
@@ -224,8 +225,3 @@ export const ButtonFilled = styled.a`
     margin: 0 auto
   }
 `
-/*
-position: absolute;
-bottom: 3rem;
-right: 4.9rem;
-*/

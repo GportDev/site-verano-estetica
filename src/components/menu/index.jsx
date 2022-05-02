@@ -16,7 +16,7 @@ export default function SmallScreenMenu(props) {
       <Title color="var(--Text-orange)">
         Venha cuidar do seu bronze com a gente!
       </Title>
-      <CTA color="var(--Strong-orange)">
+      <CTA href="https://wa.me/5512992301683" target="blank" color="var(--Strong-orange)">
         <WPP/>Agendar horário
       </CTA>
       <DownWaves src={OrangeDownWave}/>

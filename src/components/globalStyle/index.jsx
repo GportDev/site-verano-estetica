@@ -37,6 +37,6 @@ export const GlobalStyle = createGlobalStyle`
   --H1: 2.5rem;
   --H2: 2.25rem;
   --H3: 1.8rem;
-  --P: 1.15rem;
+  --P: 1.20rem;
 }
 `

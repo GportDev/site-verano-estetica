@@ -1,7 +1,7 @@
 import React from 'react';
 import { Title, Text, ButtonFilled, ContentSection, Section } from "../../../components/styles/styles";
 import Alanna from "../../../assets/images/allana01.jpg"  
-import { InicialImage } from './styles';
+import { InicialImage } from "../../verano-bronze/styles"
 
 function EsteticIntro() {
   return (

@@ -12,7 +12,7 @@ function Contact(props) {
         <TanText margin="2rem 0 4rem" fontSize="1.35rem">
           Entre em contato com a <strong>Verano</strong>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
         </TanText>
-        <TanButtonFilled href="https://wa.me/5512981942768" target="blank" fontSize="1.25rem">
+        <TanButtonFilled href="https://wa.me/5512992301683" target="blank" fontSize="1.25rem">
           <Whatsapp/>
           Entrar em contato
         </TanButtonFilled>
@@ -27,7 +27,7 @@ function Contact(props) {
             <List>
               <ListItem>
                 <Phone color="var(--Text-orange)"/>
-                (12) 98194-2768
+                (12) 99230-1683
               </ListItem>
               <ListItem lineHeight="2rem" >
                 <Pin color="var(--Text-orange)"/>

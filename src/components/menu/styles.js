@@ -25,14 +25,14 @@ export const Title = styled.h2`
   color: ${props => props.color};
 `
 
-export const CTA = styled.button`
+export const CTA = styled.a`
+  text-decoration: none;
   width: 65%;
   padding: 1rem;
   color: #FFF;
   background-color: ${props => props.color} ;
   font-size: var(--P);
   border-radius: 0.5rem;
-  border: none;
   box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
   display: flex;
   justify-content: space-evenly;
