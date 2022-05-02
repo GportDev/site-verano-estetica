@@ -59,8 +59,8 @@ export const Container = styled.div`
 
 export const Section = styled.section`
   max-width: 1170px;
-  margin: ${props=> props.margin ||'4rem auto'};
-  padding: 0 var(--Page-padding);
+  margin: ${props => props.margin ||'2rem auto'};
+  padding: ${props => props.padding || "0 1rem"};
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -77,7 +77,7 @@ export const ColorDiv = styled.div`
 
 export const ColumnSection = styled.section`
   max-width: 1170px;
-  margin: ${props=> props.margin ||'4rem auto'};
+  margin: ${props=> props.margin ||'2rem auto'};
   padding: 1rem;
   display: flex;
   flex-direction: column;

@@ -1,7 +1,7 @@
 import Header from "../../../../components/header/index"
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
-import { ButtonFilled, ContentSection, PurpleDivider1, Subtitle, Text, Title } from "../../../../components/styles/styles";
+import { ButtonFilled, ContentSection, PurpleDivider1, PurpleDivider2, Subtitle, Text, Title } from "../../../../components/styles/styles";
 import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, Video, Container } from "../../styles";
 
 import SopranoIce from "../../../../assets/images/Soprano/soprano.png"
@@ -52,6 +52,7 @@ function Soprano() {
             <ButtonFilled href="https://wa.me/5512981942768" target="blank" fontSize="1.5rem">Agende agora sua sessão</ButtonFilled>
           </PlatSection>
         </WavesDiv>
+        <PurpleDivider2/>
         <PlatSection className="content">
           <Subtitle margin="0 auto 2rem">Funcionamento do aparelho</Subtitle>
           <Video src={SopranoVideo} controls/>

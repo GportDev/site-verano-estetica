@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const TestimonialSection = styled.section`
   max-width: 1170px;
-  padding: 0 1rem;
+  padding: 0 2rem;
   display: flex;
   flex-direction: column;
   justify-content: space-between;

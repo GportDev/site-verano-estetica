@@ -9,32 +9,36 @@ import Contact from "../../components/contact/index.jsx";
 import Injectables from "../../components/other_services/injectables/index";
 import Manuals from "../../components/other_services/manuals/index";
 import Footer from "../../components/footer/index.jsx";
-import { Container, PurpleDivider1, PurpleDivider2 } from "../../components/styles/styles.js";
+import { PurpleDivider1, PurpleDivider2 } from "../../components/styles/styles.js";
 
 
 function VeranoEstetica() {
   return (
     <>
       <Header />
+
       <EsteticIntro />
+
       <PurpleDivider1 />
+
       <WavesDiv id="Platforms">
         <AestheticsServices />
-        <Container id="Procedures">
-          <Injectables />
-        </Container>
-        <Container>
-          <Manuals />
-        </Container>
+        <Injectables />
+        <Manuals />
       </WavesDiv>
+
       <PurpleDivider2 />
-      <Container id="Testimonials">
-        <Testimonials />
-      </Container>
+
+      <Testimonials />
+
       <PurpleDivider1 />
+
       <About id="About"/>
+
       <PurpleDivider2 />
+
       <Contact id="Contact"/>
+
       <Footer />
     </>
   )
