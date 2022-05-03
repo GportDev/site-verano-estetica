@@ -37,7 +37,7 @@ function Tretments() {
           >
             <SwiperSlide>
               <Card>
-                <TanSubtitle className="SectionTitle" margin="0 0 2rem">Bronzeamento natural</TanSubtitle>
+                <TanSubtitle className="CardTitle" margin="0 0 2rem">Bronzeamento natural</TanSubtitle>
                 <CardImg src={NatTanCardImg}/>
                 <TanText margin="0 0 1.5rem">
                   Bronzeamento 100% natural, com <strong>luz do sol</strong> e produtos de primeita qualidade
@@ -48,7 +48,7 @@ function Tretments() {
 
             <SwiperSlide>
               <Card>
-                <TanSubtitle className="SectionTitle" margin="0 0 2rem">Bronzeamento gelado</TanSubtitle>
+                <TanSubtitle className="CardTitle" margin="0 0 2rem">Bronzeamento gelado</TanSubtitle>
                 <CardImg src={ColdTanCardImg}/>
                 <TanText margin="0 0 1.5rem">
                   Bronzeamento para qualquer época do ano, <strong>não precisa de luz solar.</strong>
@@ -59,7 +59,7 @@ function Tretments() {
 
             <SwiperSlide>
               <Card>
-                <TanSubtitle className="SectionTitle" margin="0 0 3rem">Banho de lua</TanSubtitle>
+                <TanSubtitle className="CardTitle" margin="0 0 3rem">Banho de lua</TanSubtitle>
                 <CardImg src={MoonBathCardImg}/>
                 <TanText margin="0 0 1.5rem">
                   Clareamento de pelos do corpo todo.

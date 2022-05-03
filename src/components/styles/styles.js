@@ -6,10 +6,10 @@ export const Title = styled.h1`
   margin: ${props => props.margin};
   font-family: 'Poppins';
   font-weight: 700;
-  font-style: bold;
   font-size: var(--H1);
   line-height: 3.5rem;
   color: var(--Dark-purple);
+
   @media(max-width: 800px) {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -26,6 +26,7 @@ export const Subtitle = styled.h2`
   font-size: var(--H2);
   line-height: 3rem;
   color: var(--Dark-purple);
+  
   &.platform {
     font-size: var(--H3);
     line-height: 2rem;

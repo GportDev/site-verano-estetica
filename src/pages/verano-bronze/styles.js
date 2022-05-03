@@ -3,13 +3,14 @@ import styled from "styled-components"
 /* ------ Containers ------ */
 export const TanSection = styled.section`
   max-width: 1170px;
-  margin: ${props=> props.margin ||'2rem auto'};
+  margin: ${props => props.margin ||'2rem auto'};
+  padding: 0 1rem;
   display: flex;
   justify-content: space-between;
   align-items: center;
 
   &.content {
-    align-items: flex-start;
+
     flex-direction: column;
   }
 
@@ -36,8 +37,7 @@ export const Section = styled.section`
 `
 
 export const TanDiv = styled.div`
-  display: flex;
-  justify-content: space-between;
+  padding: 0 1rem;
 `
 
 export const ContentSection = styled.div`
@@ -47,6 +47,16 @@ export const ContentSection = styled.div`
     display: flex;
     flex-direction: row-reverse;
     align-items: flex-end;
+  }
+`
+
+export const Container = styled.div`
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  @media(max-width: 800px) {
+    flex-direction: column;
   }
 `
 
@@ -83,6 +93,8 @@ export const TanTitle = styled.h1`
   font-size: var(--H1);
   line-height: 3.5rem;
   color: var(--Dark-orange);
+  text-align: center;
+
   @media(max-width: 800px) {
     font-size: 2rem;
     line-height: 2.5rem;
@@ -101,6 +113,11 @@ export const TanSubtitle = styled.h2`
   color: var(--Dark-orange);
 
   &.SectionTitle {
+    font-size: var(--H2);
+    line-height: 2rem;
+  }
+
+  &.CardTitle {
     font-size: var(--H3);
     line-height: 2rem;
   }
@@ -121,6 +138,9 @@ export const TanH3 = styled.h3`
   align-self: flex-start;
   &.first {
     margin-top: 0;
+  }
+  &.section {
+    text-align: left;
   }
 `
 
@@ -177,13 +197,18 @@ export const InicialImage = styled.img`
 `
 
 export const ResultImg = styled.img`
-  max-height: 30rem;
+  max-width: 30rem;
   border-radius: 1rem;
   margin: 2rem;
   box-shadow: var(--Shadow);
   &.intro {
     max-width: 32rem;
     margin: 0;
+  }
+
+  @media(max-width: 800px) {
+    margin: 4rem auto 2rem;
+    max-width: 100%;
   }
 `
 
@@ -193,6 +218,7 @@ export const TanList = styled.ul`
   margin: 0 0 4rem;
   text-align: left;
   list-style-position: inside;
+  align-self: flex-start;
 `
 
 export const TanListLine = styled.li`

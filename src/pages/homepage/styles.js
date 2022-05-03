@@ -49,6 +49,13 @@ export const HomeImage = styled.img`
 export const HomeLogo = styled.img`
   max-width: 65%;
   margin: 0 auto 2rem;
+  &.about {
+   margin: 2rem auto;
+   max-width: 50%;
+   @media(max-width: 800px) {
+     max-width: 80%;
+   }
+  }
 `
 
 /* ------ Icons ------ */

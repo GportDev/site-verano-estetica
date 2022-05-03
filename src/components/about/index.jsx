@@ -1,6 +1,8 @@
-import { ContentSection, Section, Card, Subtitle, Text, ColumnSection } from "../styles/styles"
+import { Subtitle, Text, ColumnSection } from "../styles/styles"
 import { TanSubtitle, TanText } from "../../pages/verano-bronze/styles"
 import WavesDiv from "../waves_div";
+import { HomeLogo } from "../../pages/homepage/styles";
+import Logo from "../../assets/images/Logo Verano.png"
 
 function About(props) {
   return (props.orange) ? (
@@ -19,6 +21,7 @@ function About(props) {
 
             Venha conhecer essas experiências únicas disponíveis em nosso espaço!
           </TanText>
+        <HomeLogo className="about" alt="Logo Verano estética avançada" src={Logo}/>
         </ColumnSection>
       </WavesDiv>
     </>
@@ -35,6 +38,7 @@ function About(props) {
               A cada nova etapa estaremos trazendo novos serviços com a mais alta tecnologia do mercado, agregando valor e qualidade aos nossos serviços.<br/><br/>
               Venha conhecer essas experiências únicas disponíveis em nosso espaço!
             </Text>
+        <HomeLogo className="about" alt="Logo Verano estética avançada" src={Logo}/>
         </ColumnSection>
       </WavesDiv>
     </>
