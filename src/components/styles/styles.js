@@ -26,7 +26,7 @@ export const Subtitle = styled.h2`
   font-size: var(--H2);
   line-height: 3rem;
   color: var(--Dark-purple);
-  
+
   &.platform {
     font-size: var(--H3);
     line-height: 2rem;
@@ -68,7 +68,7 @@ export const Section = styled.section`
   align-items: center;
 
   @media(max-width: 800px) {
-    flex-direction: column;
+    flex-direction: column;;
   }
 `
 

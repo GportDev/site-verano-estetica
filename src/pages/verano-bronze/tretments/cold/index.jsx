@@ -1,11 +1,11 @@
 import Header from "../../../../components/header/index"
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
-import { ContentSection, OrangeDivider1, OrangeDivider2 } from "../../../../components/styles/styles";
-import { Container, ResultImg, TanButtonFilled, TanDiv, TanH3, TanSection, TanSubtitle, TanText, TanTitle} from "../../styles"
-import Resultado1 from "../../../../assets/images/bronze/bronze-nat-resultado1.jpg"
-import Resultado2 from "../../../../assets/images/bronze/bronze-nat-resultado2.jpg"
-import Intro from "../../../../assets/images/bronze/bronze-nat-clip-intro.jpg"
+import { ContentSection, OrangeDivider2 } from "../../../../components/styles/styles";
+import { Container, ResultImg, TanButtonFilled, TanH3, TanSection, TanText, TanTitle} from "../../styles"
+
+
+import Intro from "../../../../assets/images/bronze/cold.png"
 import WavesDiv from "../../../../components/waves_div";
 
 function Cold() {
@@ -46,14 +46,6 @@ function Cold() {
           </TanSection>
         </WavesDiv>
         <OrangeDivider2 />
-        <TanSection className="images">
-          <TanSubtitle margin="2rem auto" className="SectionTitle">Resultados</TanSubtitle>
-          <TanDiv>
-            <ResultImg src={Resultado1}/>
-            <ResultImg src={Resultado2}/>
-          </TanDiv>
-        </TanSection>
-        <OrangeDivider1 />
         <Contact orange/>
         <Footer orange/>
     </>

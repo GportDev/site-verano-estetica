@@ -10,6 +10,7 @@ import Testimonials from "../../components/testimonials/index.jsx";
 import { OrangeDivider1, OrangeDivider2 } from "../../components/styles/styles.js";
 
 
+
 function VeranoBronze() {
   return (
     <>

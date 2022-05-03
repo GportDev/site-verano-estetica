@@ -205,13 +205,18 @@ export const ResultImg = styled.img`
     max-width: 32rem;
     margin: 0;
   }
+  &.experience {
+    margin: 0 auto 0 2rem;
+  }
 
   @media(max-width: 800px) {
     margin: 4rem auto 2rem;
     max-width: 100%;
+    &.experience {
+    margin: 0 auto;
+  }
   }
 `
-
 
 /* ------ Lists ------ */
 export const TanList = styled.ul`

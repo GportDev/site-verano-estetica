@@ -2,7 +2,7 @@ import Header from "../../../../components/header/index"
 import WavesDiv from "../../../../components/waves_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
-import { ContentSection, OrangeDivider1, OrangeDivider2 } from "../../../../components/styles/styles";
+import { ContentSection, OrangeDivider1, OrangeDivider2, SwiperDiv } from "../../../../components/styles/styles";
 import {
   TanSection,
   Container,
@@ -14,12 +14,19 @@ import {
   TanTitle,
   TanSubtitle,
   TanH3,
-  TanText
+  TanText,
 } from "../../styles"
 
-import Resultado1 from "../../../../assets/images/bronze/bronze-nat-resultado1.jpg"
-import Resultado2 from "../../../../assets/images/bronze/bronze-nat-resultado2.jpg"
+import { Navigation } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css/bundle';
+
+import Resultado1 from "../../../../assets/images/bronze/Resultado1.png"
+import Resultado2 from "../../../../assets/images/bronze/Resultado2.jpg"
 import Intro from "../../../../assets/images/bronze/bronze-nat-clip-intro.jpg"
+import Ex01 from "../../../../assets/images/bronze/ex01.png"
+import Ex02 from "../../../../assets/images/bronze/ex02.png"
+import Ex03 from "../../../../assets/images/bronze/ex03.png"
 
 function Natural() {
   return(
@@ -41,7 +48,37 @@ function Natural() {
               <ResultImg src={Intro}/>
             </Container>
           </TanSection>
-
+          <TanSubtitle>Conheça nossa experiência</TanSubtitle>
+          <TanSection>
+          <SwiperDiv>
+            <Swiper id="orange"
+              modules={[Navigation]}
+              slidesPerView={1}
+              spaceBetween={20}
+              navigation
+              breakpoints={{
+                600: {
+                  slidesPerView: 2,
+                  spaceBetween: 10
+                },
+                1000: {
+                  slidesPerView: 2,
+                  spaceBetween: 10,
+                }
+              }}
+            >
+              <SwiperSlide>
+                <ResultImg src={Ex01}/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ResultImg src={Ex02}/>
+              </SwiperSlide>
+              <SwiperSlide>
+                <ResultImg src={Ex03}/>
+              </SwiperSlide>
+            </Swiper>
+          </SwiperDiv>
+          </TanSection>
           <TanSection className="content">
             <TanH3 className="first">Como funciona?</TanH3>
             <TanText  align="justify">
