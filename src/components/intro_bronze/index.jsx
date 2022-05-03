@@ -1,6 +1,6 @@
 import React from 'react';
 import { Section, ContentSection, TanButtonFilled, TanTitle, TanText, InicialImage, TanDiv } from "../../pages/verano-bronze/styles.js";
-import BronzeIntro from "../../assets/images/bronze/intro01.jpg"
+import BronzeIntro from "../../assets/images/bronze/Intro01.jpg"
  
 
 function TanIntro() {
