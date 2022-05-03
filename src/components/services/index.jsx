@@ -19,7 +19,7 @@ function AestheticsServices() {
       </Text>
 
       <SwiperDiv>
-        <Swiper
+        <Swiper id="purple"
           modules={[Navigation]}
           slidesPerView={1}
           spaceBetween={20}
