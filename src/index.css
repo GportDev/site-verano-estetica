@@ -22,12 +22,12 @@ body {
   padding: 1rem 0;
 }
 
-#purple > .swiper-button-next, .swiper-button-prev {
+#purple .swiper-button-next, #purple .swiper-button-prev {
   margin: 0 -0.75rem;
   color: var(--Principal-purple);
 }
 
-#orange > .swiper-button-next, .swiper-button-prev {
+#orange .swiper-button-next, #orange .swiper-button-prev {
   margin: 0 -0.75rem;
   color: var(--Strong-orange);
 }
