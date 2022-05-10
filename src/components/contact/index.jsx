@@ -7,7 +7,7 @@ import { TanSubtitle, TanText, TanButtonFilled} from "../../pages/verano-bronze/
 function Contact(props) {
   return(props.orange) ? (
     <>
-      <ColumnSection id="BronzeContact">
+      <ColumnSection id="orangeContact">
         <TanSubtitle>Fale com a gente!</TanSubtitle>
         <TanText margin="2rem 0 4rem" fontSize="1.35rem">
           Entre em contato com a <strong>Verano</strong>, queremos tirar suas dúvidas, ouvir suas críticas e sugestões.
@@ -44,7 +44,7 @@ function Contact(props) {
     </>
   ) : (
     <>
-      <ColumnSection id="Contact">
+      <ColumnSection id="purpleContact">
 
         <Subtitle>
           Fale com a gente!

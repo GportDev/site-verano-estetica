@@ -5,7 +5,7 @@ import BronzeIntro from "../../assets/images/bronze/Intro01.jpg"
 
 function TanIntro() {
   return (
-      <Section>
+      <Section id="orangeIntro">
         <TanDiv>
           <ContentSection>
             <TanTitle margin="0 auto">Sua pele bronzeada o ano todo!</TanTitle>

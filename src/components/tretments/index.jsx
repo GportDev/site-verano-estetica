@@ -11,7 +11,7 @@ import 'swiper/css/bundle';
 
 function Tretments() {
   return (
-    <ColumnSection>
+    <ColumnSection id="orangeProcedures">
       <TanSubtitle>Tratamentos</TanSubtitle>
       <TanText margin='3rem auto'>
         Pioneira no bronzeamento natural em São José dos Campos, a Verano Bronze conta com <strong>profissionais dedicadas, espaço aconchegante e experiência inesquecível!</strong>

@@ -2,6 +2,8 @@ import React from "react";
 import { HeaderStyle, Menu, MenuItems, MenuItem, MenuLink, MenuHamb} from "./header";
 import { LogoVerano } from "../styles/styles.js";
 import Logo from "../../assets/images/Logo Verano.png"
+import Scroll from 'react-scroll'
+import { animateScroll as scroll} from 'react-scroll'
 
 function Header(props) {
   return(props.orange) ? (
@@ -16,21 +18,65 @@ function Header(props) {
             </a>
             : 
             <MenuItems>
-              <MenuLink href="#/verano-bronze/#HomeBronze" className="taning">
+
+              <MenuLink
+                activeClass="orangeActive"
+                to="orangeIntro"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="taning"
+              >
                 <MenuItem>Inicio</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-bronze/#Tretments" className="taning">
+
+              <MenuLink 
+                activeClass="orangeActive"
+                to="orangeProcedures"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="taning">
                 <MenuItem>Tratamentos</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-bronze/#Results" className="taning">
+
+              <MenuLink 
+                activeClass="orangeActive"
+                to="orangeTestimonials"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="taning">
                 <MenuItem>Relatos</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-bronze/#AboutBronze" className="taning">
+
+              <MenuLink 
+                activeClass="orangeActive"
+                to="orangeAbout"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+                className="taning"
+              >
                 <MenuItem>Sobre</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-bronze/#ContactBronze" className="taning">
+
+              <MenuLink 
+                activeClass="orangeActive"
+                to="orangeContact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500} 
+                className="taning"
+              >
                 <MenuItem>Contato</MenuItem>
               </MenuLink>
+
             </MenuItems>
           }
         </Menu>
@@ -47,22 +93,63 @@ function Header(props) {
             </a>
              :
             <MenuItems>
-              <MenuLink href="#/verano-estetica#Home">
+              <MenuLink 
+                activeClass="active"
+                to="purpleIntro"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 <MenuItem>Inicio</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica#Platforms">
+              <MenuLink 
+                activeClass="active"
+                to="platforms"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 <MenuItem>Plataformas</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica#Produres">
+              <MenuLink 
+                activeClass="active"
+                to="procedures"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 <MenuItem>Procedimentos</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica#Testimonials">
+              <MenuLink 
+                activeClass="active"
+                to="purpleTestimonials"
+                spy={true}
+                smooth={true}
+                duration={500}
+              >
                 <MenuItem>Relatos</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica#About">
+              <MenuLink 
+                activeClass="active"
+                to="purpleAbout"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 <MenuItem>Sobre</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica#Contact">
+              <MenuLink 
+                activeClass="active"
+                to="purpleContact"
+                spy={true}
+                smooth={true}
+                offset={-100}
+                duration={500}
+              >
                 <MenuItem>Contato</MenuItem>
               </MenuLink>
             </MenuItems>

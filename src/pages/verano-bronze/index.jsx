@@ -20,7 +20,7 @@ function VeranoBronze() {
 
       <OrangeDivider1 />
 
-      <WavesDiv orange id="Tretments">
+      <WavesDiv orange>
         <Tretments />
       </WavesDiv>
 
@@ -30,11 +30,11 @@ function VeranoBronze() {
 
       <OrangeDivider1 />
 
-      <About id="AboutBronze" orange/>
+      <About orange/>
 
       <OrangeDivider2 />
 
-      <Contact id="ContactBronze" orange/>
+      <Contact orange/>
 
       <Footer orange/>
     </>

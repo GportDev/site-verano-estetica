@@ -29,11 +29,11 @@ function VeranoEstetica() {
 
       <PurpleDivider2 />
 
-      <Testimonials />
+      <Testimonials/>
 
       <PurpleDivider1 />
 
-      <About id="About"/>
+      <About/>
 
       <PurpleDivider2 />
 

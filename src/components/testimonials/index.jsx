@@ -11,7 +11,7 @@ import Resultado2 from "../../assets/images/bronze/bronze-nat-resultado2.jpg"
 function Testimonials(props) {
   return(props.orange) ? (
     <>
-      <TestimonialSection>
+      <TestimonialSection id="orangeTestimonials">
         <TanSubtitle margin="0 auto 4rem">
           Resultados e relatos dos nossos amados clientes
         </TanSubtitle>
@@ -50,7 +50,7 @@ function Testimonials(props) {
     </>
   ) : (
     <>
-      <TestimonialSection>
+      <TestimonialSection  id="purpleTestimonials">
         <Subtitle margin="0 auto 4rem">
           Resultados e relatos dos nossos amados clientes
         </Subtitle>

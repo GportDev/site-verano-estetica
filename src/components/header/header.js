@@ -1,5 +1,6 @@
 import styled from "styled-components"
-import { FiMenu } from 'react-icons/fi';
+import { FiMenu } from 'react-icons/fi'
+import { Link } from 'react-scroll'
 
 /* ------ HEADER ------ */
 export const HeaderStyle = styled.header`
@@ -30,7 +31,7 @@ export const MenuItem = styled.li`
   text-align: center;
 `
 
-export const MenuLink = styled.a`
+export const MenuLink = styled(Link)`
   font-family: 'Poppins';
   color: var(--Dark-purple);
   text-decoration: none;
@@ -43,10 +44,18 @@ export const MenuLink = styled.a`
     color: var(--Highlight-purple);
     transition: color 0.3s;
   }
+  &.active {
+    color: var(--Highlight-purple);
+    transition: color 0.3s;
+  }
   &.taning {
     :hover {
       color: var(--Strong-orange);
       transition: color 0.3s;
+    }
+    &.orangeActive {
+    color: var(--Strong-orange);
+    transition: color 0.3s;
     }
   }
 `

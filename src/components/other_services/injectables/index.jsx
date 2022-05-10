@@ -20,7 +20,7 @@ function Injectables() {
   const [pdoPopup, setPDOPopup] = useState(false);
 
   return(
-    <Section>
+    <Section id="procedures">
       <ContentSection>
         <Subtitle margin="0 0 2rem">Estética avançada com injetáveis</Subtitle>
         <Text>

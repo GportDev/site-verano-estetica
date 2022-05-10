@@ -8,7 +8,7 @@ function About(props) {
   return (props.orange) ? (
     <>
       <WavesDiv orange>
-        <ColumnSection>
+        <ColumnSection id="orangeAbout">
           <TanSubtitle className="SectionTitle">Sobre nós</TanSubtitle>
           <TanText align='justify' margin='2.6rem 0'>
             Fundada no final de 2019, a <strong color="#D465E7">Verano</strong> busca com seu nome trazer algo que traga a essência do verão para a estética, com cuidados que proporcionam beleza, bem estar e saúde para os clientes.
@@ -28,7 +28,7 @@ function About(props) {
   ) : (
     <>
       <WavesDiv>
-        <ColumnSection>
+        <ColumnSection id="purpleAbout">
             <Subtitle className="SectionTitle">Sobre nós</Subtitle>
             <Text align='justify' margin='2.6rem 0'>
               Fundada no final de 2019, a <strong color="#D465E7">Verano</strong> busca com seu nome trazer algo que traga a essência do verão para a estética, com cuidados que proporcionam beleza, bem estar e saúde para os clientes.

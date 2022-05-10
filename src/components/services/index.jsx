@@ -12,7 +12,7 @@ import 'swiper/css/bundle';
 
 function AestheticsServices() {
   return(
-    <ColumnSection margin="4rem auto 8rem" id="Platforms">
+    <ColumnSection margin="4rem auto 8rem" id="platforms">
       <Subtitle margin="0 auto">Serviços e plataformas</Subtitle>
       <Text>Com mais de 2 anos no mercado de estética, a Verano conquistou seus clientes com opções de tratamento exclusivas, sempre se preocupando com a saúde e bem estar do paciente.
       Dentre esses serviços temos:
