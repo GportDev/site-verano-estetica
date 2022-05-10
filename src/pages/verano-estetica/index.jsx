@@ -17,11 +17,11 @@ function VeranoEstetica() {
     <>
       <Header />
 
-      <EsteticIntro />
+      <EsteticIntro/>
 
       <PurpleDivider1 />
 
-      <WavesDiv id="Platforms">
+      <WavesDiv>
         <AestheticsServices />
         <Injectables />
         <Manuals />
@@ -37,7 +37,7 @@ function VeranoEstetica() {
 
       <PurpleDivider2 />
 
-      <Contact id="Contact"/>
+      <Contact />
 
       <Footer />
     </>

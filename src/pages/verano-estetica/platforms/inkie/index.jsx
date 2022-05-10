@@ -21,7 +21,8 @@ import {
   ThirdTitle,
   ImgDiv,
   Picture,
-  ImageContainer 
+  ImageContainer, 
+  ListTitle
 } from "../../styles";
 
 import InkiePic from "../../../../assets/images/ND_YAG/Inkie.png"
@@ -38,6 +39,7 @@ function Inkie() {
           <Title>Inkie ND YAG Q Switched</Title>
             <Container>
             <ContentSection>
+              <ListTitle>Tratamentos</ListTitle>
               <BenefitsList>
                 <ListLine>Blackpeel</ListLine>
                 <ListLine>Rejuvenescimento</ListLine>

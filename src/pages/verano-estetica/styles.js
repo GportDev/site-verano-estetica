@@ -32,6 +32,15 @@ export const ImageContainer = styled.div`
   }
 `
 
+export const ListTitle = styled.h3`
+  font-size: var(--H3);
+  color: var(--Dark-purple);
+  text-align: left;
+  @media(max-width: 800px) {
+    margin: 2rem auto;
+  }
+`
+
 export const BenefitsList = styled.ul`
   margin: 2rem 0;
   text-align: left;

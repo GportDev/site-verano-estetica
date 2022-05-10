@@ -14,7 +14,7 @@ function Tretments() {
     <ColumnSection>
       <TanSubtitle>Tratamentos</TanSubtitle>
       <TanText margin='3rem auto'>
-        Pioneira no bronzeamento natural em São José dos Campos, a Verano Bronze conta com <strong>profissionais dedicadas, espaço aconchegante e experiência inexquecível!</strong>
+        Pioneira no bronzeamento natural em São José dos Campos, a Verano Bronze conta com <strong>profissionais dedicadas, espaço aconchegante e experiência inesquecível!</strong>
         <br/><br/>
         Nossos tratamentos são:
       </TanText>
@@ -31,7 +31,7 @@ function Tretments() {
               },
               1000: {
                 slidesPerView: 3,
-                spaceBetween: 20,
+                spaceBetween: 0,
               }
             }}
           >
@@ -67,8 +67,19 @@ function Tretments() {
                 <TanButtonFilled fontSize="1.5rem" href="#/verano-bronze/banho-de-lua">Saiba mais</TanButtonFilled>
               </Card>
             </SwiperSlide>
-          </Swiper>
 
+            <SwiperSlide>
+              <Card>
+                <TanSubtitle className="CardTitle" margin="0 0 2rem">Bronzeamento com máquina</TanSubtitle>
+                <CardImg src={NatTanCardImg}/>
+                <TanText margin="0 0 1.5rem">
+                  Bronzeamento de máquina com produtos de altíssima qualidade
+                </TanText>
+                <TanButtonFilled fontSize="1.5rem" href="#/verano-bronze/bronzeamento-bronzejet">Saiba mais</TanButtonFilled>
+              </Card>
+            </SwiperSlide>
+
+          </Swiper>
         </SwiperDiv>
     </ColumnSection>
   )

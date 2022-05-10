@@ -2,7 +2,7 @@ import Header from "../../../../components/header/index";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { ButtonFilled, ContentSection, PurpleDivider1, PurpleDivider2, Subtitle, Text, Title  } from "../../../../components/styles/styles";
-import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Picture, Container, ImageContainer } from "../../styles";
+import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, ImgDiv, Picture, Container, ImageContainer, ListTitle } from "../../styles";
 import UltraformerIII from "../../../../assets/images/Ultraformer/ULTRAFORMER3 1.png"
 import Papada from "../../../../assets/images/Ultraformer/papada.jpeg"
 import Tratamento from "../../../../assets/images/Ultraformer/equipamento.jpeg"
@@ -17,6 +17,7 @@ function Ultraformer() {
             <Title>Ultraformer III</Title>
           <Container>
             <ContentSection>
+              <ListTitle>Tratamentos</ListTitle>
               <BenefitsList>
                 <ListLine><strong>Tira flacidez</strong></ListLine>
                 <ListLine><strong>Efeito lifting</strong> imediato</ListLine>

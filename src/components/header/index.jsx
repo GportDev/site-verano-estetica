@@ -16,19 +16,19 @@ function Header(props) {
             </a>
             : 
             <MenuItems>
-              <MenuLink href="#/verano-estetica/#HomeBronze" className="taning">
+              <MenuLink href="#/verano-bronze/#HomeBronze" className="taning">
                 <MenuItem>Inicio</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#Tretments" className="taning">
+              <MenuLink href="#/verano-bronze/#Tretments" className="taning">
                 <MenuItem>Tratamentos</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#Results" className="taning">
+              <MenuLink href="#/verano-bronze/#Results" className="taning">
                 <MenuItem>Relatos</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#AboutBronze" className="taning">
+              <MenuLink href="#/verano-bronze/#AboutBronze" className="taning">
                 <MenuItem>Sobre</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#ContactBronze" className="taning">
+              <MenuLink href="#/verano-bronze/#ContactBronze" className="taning">
                 <MenuItem>Contato</MenuItem>
               </MenuLink>
             </MenuItems>
@@ -47,22 +47,22 @@ function Header(props) {
             </a>
              :
             <MenuItems>
-              <MenuLink href="#/verano-estetica/#Home">
+              <MenuLink href="#/verano-estetica#Home">
                 <MenuItem>Inicio</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#Platforms">
+              <MenuLink href="#/verano-estetica#Platforms">
                 <MenuItem>Plataformas</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#Produres">
+              <MenuLink href="#/verano-estetica#Produres">
                 <MenuItem>Procedimentos</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#Testimonials">
+              <MenuLink href="#/verano-estetica#Testimonials">
                 <MenuItem>Relatos</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#About">
+              <MenuLink href="#/verano-estetica#About">
                 <MenuItem>Sobre</MenuItem>
               </MenuLink>
-              <MenuLink href="#/verano-estetica/#Contact">
+              <MenuLink href="#/verano-estetica#Contact">
                 <MenuItem>Contato</MenuItem>
               </MenuLink>
             </MenuItems>

@@ -3,7 +3,7 @@ import WavesDiv from "../../../../components/waves_div";
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { ButtonFilled, ContentSection, PurpleDivider2, Text, Title  } from "../../../../components/styles/styles";
-import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, Container } from "../../styles";
+import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, Container, ListTitle } from "../../styles";
 
 import EthereaPic from "../../../../assets/images/Etherea/Etherea.png"
 
@@ -16,6 +16,7 @@ function Etherea() {
             <Title>Etherea MX</Title>
           <Container>
             <ContentSection>
+              <ListTitle>Tratamentos</ListTitle>
               <BenefitsList>
                 <ListLine>Estrias</ListLine>
                 <ListLine>Melasmas</ListLine>
@@ -24,10 +25,10 @@ function Etherea() {
                 <ListLine>Lesões vasculares</ListLine>
                 <ListLine>Fotoenvelhecimento</ListLine>
                 <ListLine>Lesões pigmentadas</ListLine>
+                <ListLine>Remoção de tatuagem</ListLine>
                 <ListLine>Procedimentos faciais</ListLine>
                 <ListLine>Tratamento íntimo feminino</ListLine>
-                <ListLine>Remoção de tatuagem</ListLine>
-                <ListLine>+ de 70 tratamentos</ListLine>
+                <ListLine>Além de + de 70 tratamentos</ListLine>
               </BenefitsList>
             </ContentSection>
               <Equipment src={EthereaPic} className="etherea"/>
@@ -45,7 +46,7 @@ function Etherea() {
 
             A plataforma pode penetrar a energia em locais com maior densidade de gordura e profundidade, com a mesma eficiência que trabalha em locais superficiais e com menor concentração de lipídios.
 
-            Em uma análise geral, os procedimentos com o Etherea MX não geram um grande desconforto para o paciente. Contudo, cada pessoa tem uma sensibilidade diferente e, por isso, em alguns casos, o médico responsável poderá optar pela administração de anestesia.
+            Em uma análise geral, os procedimentos com o Etherea MX não geram um grande desconforto para o paciente. Contudo, cada pessoa tem uma sensibilidade diferente e, por isso, em alguns casos, o profissional responsável poderá optar pela administração de anestesia.
           </Text>
           <ThirdTitle>Indicações</ThirdTitle>
           <Text align="justify">

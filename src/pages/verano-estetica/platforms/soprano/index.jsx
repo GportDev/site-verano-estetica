@@ -2,7 +2,7 @@ import Header from "../../../../components/header/index"
 import Contact from "../../../../components/contact";
 import Footer from "../../../../components/footer";
 import { ButtonFilled, ContentSection, PurpleDivider1, PurpleDivider2, Subtitle, Text, Title } from "../../../../components/styles/styles";
-import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, Video, Container } from "../../styles";
+import { ListLine, PlatSection, BenefitsList, Equipment, ThirdTitle, Video, Container, ListTitle } from "../../styles";
 
 import SopranoIce from "../../../../assets/images/Soprano/soprano.png"
 import SopranoVideo from "../../../../assets/videos/soprano/soprano.mp4"
@@ -17,6 +17,7 @@ function Soprano() {
               <Title>Soprano Ice laser de diodo</Title>
             <Container>
               <ContentSection>
+                <ListTitle>Tratamentos</ListTitle>
                 <BenefitsList>
                   <ListLine><strong>Indolor</strong></ListLine>
                   <ListLine><strong>Não queima a pele</strong></ListLine>

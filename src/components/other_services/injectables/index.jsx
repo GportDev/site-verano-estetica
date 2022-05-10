@@ -22,7 +22,7 @@ function Injectables() {
   return(
     <Section>
       <ContentSection>
-        <Subtitle margin="0 0 2rem">Estética com injetáveis</Subtitle>
+        <Subtitle margin="0 0 2rem">Estética avançada com injetáveis</Subtitle>
         <Text>
           Os procedimentos injetáveis são técnicas de estética avançada, pensados para tratar a face através da injeção de fluidos. São os procedimentos mais procurados em países como China e Estados unidos.
         </Text>
@@ -32,8 +32,8 @@ function Injectables() {
         <TableLink onClick={setAcidPopup} key={2}><Procedure>Preenchedores com ácido hialurônico</Procedure></TableLink>
         <TableLink onClick={setBioestPopup} key={3}><Procedure>Bioestimuladores de colágeno</Procedure></TableLink>
         <TableLink onClick={setDermarollerPopup} key={4}><Procedure>Microagulhamento com dermaroller</Procedure></TableLink>
-        <TableLink onClick={setSkinboosterPopup} key={5}><Procedure>Intradermoterapia e Skinbooster</Procedure></TableLink>
-        <TableLink onClick={setLipoPopup} key={6}><Procedure>Lipo enzimática de Papada</Procedure></TableLink>
+        <TableLink onClick={setSkinboosterPopup} key={5}><Procedure>Intradermoterapia e skinbooster</Procedure></TableLink>
+        <TableLink onClick={setLipoPopup} key={6}><Procedure>Lipo enzimática de papada</Procedure></TableLink>
         <TableLink onClick={setPDOPopup} key={7}><Procedure>Fios de PDO</Procedure></TableLink>
       </ProceduresTable>
       

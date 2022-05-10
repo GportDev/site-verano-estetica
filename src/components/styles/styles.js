@@ -26,10 +26,16 @@ export const Subtitle = styled.h2`
   font-size: var(--H2);
   line-height: 3rem;
   color: var(--Dark-purple);
+  @media(max-width: 800px) {
+    font-size: 2rem;
+  }
 
   &.platform {
     font-size: var(--H3);
     line-height: 2rem;
+    &.single-line {
+      line-height: 3rem;
+    }
   }
   @media(max-width: 800px) {
     &.SectionTitle {
@@ -37,6 +43,7 @@ export const Subtitle = styled.h2`
       line-height: 2.5rem;
     }
   }
+
 `
 
 export const Text = styled.p`

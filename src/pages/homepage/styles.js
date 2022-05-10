@@ -23,7 +23,7 @@ export const HomeCard = styled.section`
 /* ------ Typography ------ */
 export const HomeTitle = styled(Title)`
   margin: 2rem 0;
-  font-size: var(--H1);
+  font-size: 2rem;
   line-height: 2.5rem;
 
   @media(max-width: 800px) {

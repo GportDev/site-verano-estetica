@@ -16,10 +16,10 @@ function Homepage() {
           <HomeImage alt="Allana Diaz, CEO da Verano Estética segurando um aparelho de depilação a laser" src={Alanna}/>
           <Buttons>
             <HomeButton href="#/verano-estetica" color="#23042F">
-              <ChevronLeft/>Verano estetica
+              <ChevronLeft/>Verano Estética
             </HomeButton>
             <HomeButton href="#/verano-bronze" color="#23042F">
-              Verano bronze <ChevronRight />
+              Verano Bronze <ChevronRight />
             </HomeButton>
           </Buttons>
           <HomeText>Verano Estética Avançada | Todos os direitos reservados <br /> Developed by <a alt='Site do desenvolvedor desta página' src="#" target='blank'>PortDev</a></HomeText>

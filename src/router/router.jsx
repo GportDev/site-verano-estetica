@@ -12,6 +12,7 @@ import Natural from "../pages/verano-bronze/tretments/natural/index.jsx"
 import Cold from "../pages/verano-bronze/tretments/cold/index.jsx"
 import Moon from "../pages/verano-bronze/tretments/moon/index.jsx"
 import SmallScreenMenu from "../components/menu/index.jsx"
+import BronzeJet from "../pages/verano-bronze/tretments/bronze-jet/index.jsx"
 
 
 function MyRouter() {
@@ -31,6 +32,7 @@ function MyRouter() {
           <Route path="/verano-bronze/bronzeamento-gelado" element={<Cold />}/>
           <Route path="/verano-bronze/bronzeamento-natural" element={<Natural />}/>
           <Route path="/verano-bronze/banho-de-lua" element={<Moon />}/>
+          <Route path="/verano-bronze/bronzemento-bronzejet" element={<BronzeJet />}/>
         </Routes>
       </App>
     </HashRouter>
